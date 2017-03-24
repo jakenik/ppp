@@ -1,0 +1,36 @@
+div,p,ul,li,ol,dd,dt,dl,table,tr,td,h1,h2,h3,a,img,span,strong,option,i,b,em,label,select,textarea,body{margin: 0 ;padding: 0;}
+li{list-style: none;}
+a{color:#000;text-decoration: none;}
+a:hover{color: #f00;text-decoration: underline;}
+img{border: 0 none;vertical-align: top;}
+strong{font-family: "微软雅黑";}
+body{font-size: 12px;color: #000;background: #fff;width: 100%;height: 100%;}
+.clearfix{*zoom:1;}
+.clearfix:after{ height0; font-size:0; clear: both; visibility: hidden; content: "."; display:block;}
+.dakuang{width: 1004px;height: auto;border-top: 4px #7f7f7f solid;margin: 0 auto;}
+.k1{width: 100%;height: 84px;}
+.t1{float:left;width: 772px;height: 39px;}
+.t2{float: left;width: 232px;height: 100%;background: url(../img/01.png)no-repeat;}
+.t3{float: right;width: 147px;height: 39px;}
+.t3 a{line-height: 43px;color: #a3a2a2;margin: 15px 0 0 10px;}
+.t3 span{margin-left: 8px;color: #a3a2a2;}
+.t4{float: left;width: 772px;height: 41px;background: url(../img/k.png)no-repeat;}
+.t4 a{margin: 15px 22px 0 23px;line-height: 41px;}
+.logo{width: 100%;height: 340px;background: url(../img/02.jpg)no-repeat;}
+.dakung2{border-bottom:  #e2e1e1 7px solid;height: 522px;}
+.h1{float:left;width: 189px;height: 439px;}
+.h2{float: left; width: 777px;height: 439px;padding-left: 38px;}
+.h1-1{width: 100%;height: 33px;}
+.h1-1 img{float: left;}
+.h1-1 span{float:left;width: 64px;height: 26px;text-align: center;margin-top: 7px;line-height: 26px;color: #1952c6;}
+.h1-1 p{float: left;width: 101px;height: 26px;text-align: center;margin-top: 7px;line-height: 26px;color: #9a9a9a;}
+.h1-2{width: 189px;height: auto;padding-top: 10px;}
+.h1-2 li{width: 125px;height: 18px;background: url(../img/li.png)no-repeat;margin-top: 3px;padding: 8px 0 0 63px;line-height: 12px;}
+.h1-3{width: 188px;height: 74px;margin-top: 4px;background: url(../img/lianxi.jpg)no-repeat;}
+.h1-4{width: 100%;height: 158px;margin-top: 4px;}
+.h1-4 li{float: left; line-height: 13px;margin-top: 13px;}
+.h2-3{width: 100%;height: 26px;padding: 16px 0 0 21px;font-size: 14px;line-height: 15px;}
+.h2-4{padding-left: 22px;}
+.h2-5{margin-top: 11px;}
+.h2-5 li{line-height: 26px;}
+.tail{	 width: 363px;height: 46px;margin: 13px auto;line-height: 23px;text-align: center;color: #a4a2a2;}
