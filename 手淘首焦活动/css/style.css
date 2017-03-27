@@ -107,6 +107,7 @@ body {
 }
 .list-s {
   padding-bottom: 0.18rem;
+  position: relative;
 }
 .list1 li {
   height: 0.48rem;
@@ -252,4 +253,13 @@ body {
 .list-x {
   border-bottom: #002f71 1px dashed;
   margin-bottom: 0.27rem;
+}
+.label {
+  float: right;
+  padding-top: 0.84rem;
+  margin-right: 0.15rem;
+}
+.label img {
+  width: 100%;
+  height: 100%;
 }
