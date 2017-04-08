@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style >
+		body,section,div,img{margin: 0;padding: 0;}
+		.bg{background: url(img/bg.jpg)no-repeat;width: 770px;height: 730px;margin: 0 auto;position: relative;}
+		.needle{background: url(img/icon.png);width: 43px;height: 357px;position: absolute;left: 50%;top: 50%;margin: -230px 0 0 -22px;transform-origin: 20px 67%;}/*秒针*/
+		.needle-2{background-position: -43px 0;margin: -216px 0 0 -34px;transform-origin: 28px 64%}/*时针*/
+		.needle-3{background-position: -90px 0;margin: -247px 0 0 -28px;width: 34px;transform-origin: 18px 74%}
+		
+	</style>
+</head>
+<body>
+	<section class="bg"><div class="needle"></div><div class="needle needle-2"></div><div class="needle needle-3"></div></section>
+	
+	<script >
+		function downTime(){
+		var time=new Date();
+		var year=time.getFullYear();//年份	
+		var month=time.getMonth()+1;//月份
+		var dateNum=time.getDate();//日
+		var week=time.getDay();//星期几
+		var hours=time.getHours();//小时
+		var Minutes=time.getMinutes();//分
+		var Seconds=time.getSeconds();//秒
+		
+		var needle=document.querySelector(".needle");
+		var needleNum=document.querySelector(".needle-2");
+		var needleNumK=document.querySelector(".needle-3");
+		
+		
+			var Seconds=time.getSeconds();//秒
+			needle.style.transform="rotate("+Seconds*6+"deg)";
+			needleNum.style.transform="rotate("+hours*30+"deg)";
+			needleNumK.style.transform="rotate("+Minutes*6+"deg)";
+		
+		
+		switch(week){
+			case 0:
+			week="日";
+			break;
+			case 1:
+			week="一";
+			break;
+			case 2:
+			week="二";
+			break;
+			case 3:
+			week="三";
+			break;
+			case 4:
+			week="四";
+			break;
+			case 5:
+			week="五";
+			break;
+			case 6:
+			week="六";
+			break;
+		}
+		
+		console.log(year+"年"+month+"月"+dateNum+"日 星期"+week+""+hours+":"+Minutes+":"+Seconds);}
+		downTime()
+		setInterval(downTime,1000);
+	</script>
+</body>
+</html>
