@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>分裂</title>
+	<style>
+		.body{width: 600px;height: 600px ;background: #000;margin: 0 auto;border-radius: 50%;}
+		.body div{width: 50%;height: 50%;float: left;border-radius: 50% ;background: #00f;}
+		
+		
+	</style>
+</head>
+<body>
+	<section class="body"></section>
+	<script>
+		var snStyle=document.querySelector(".body");
+		snStyle.onclick=Fl;
+		function Fl(){
+			for(var i=0;i<4;i++){
+				var sectionNode=document.createElement("div");
+				sectionNode.onclick=Fl;
+				sectionNode.style.background=Color();
+				this.appendChild(sectionNode);
+				
+				
+			}
+			this.style.background="none";
+			this.onclick=null;
+			
+			
+			
+			
+		}
+		
+		
+			
+			function Color(){
+				divNOde:document.getElementsByClassName("div")[0];
+				var colorFun="rgb(";
+				for(var i=0;i<3;i++){
+					var snColor=Math.floor(Math.random()*256);
+					colorFun+=snColor+",";
+					
+				}
+				colorFun=colorFun.slice(0,-1);
+				colorFun+=")";
+				return colorFun;
+			}
+		
+		
+		
+		
+		
+		
+		
+		
+	</script>
+</body>
+</html>
