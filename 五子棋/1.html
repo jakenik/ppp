@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body,ul,li,span,a{ margin:0; padding:0;}
+a{ text-decoration:none;}
+li{ list-style:none;}
+.clearfix{ *zoom:1;}
+.clearfix:after{ content:"."; display:block; visibility:hidden; height:0; font-size:0; clear:both;}
+body{ background:#cc7a52;}
+.box{ width:1020px; height:auto; margin:0 auto;}
+.box-left{ float:left; position:relative; width:155px; height:auto;}
+.arrow{ position:absolute; font-size:26px; height:26px; line-height:26px; left:65px; top:38px;}
+.black,.white{ display:block; width:30px; height:30px; border-radius:50%; box-shadow:2px 2px 6px #000;font-size: 6px;}
+.black{ 
+    background: -webkit-radial-gradient(#fff 0%,#000 60%); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(#fff 0%,#000 60%); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(#fff 0%,#000 60%); /* Firefox 3.6 - 15 */
+    background: radial-gradient(#fff 0%,#000 60%); /* 标准的语法 */
+}
+.white{
+    background: -webkit-radial-gradient(#000 -100%,#fff 60%); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(#000 -100%,#fff 60%); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(#000 -100%,#fff 60%); /* Firefox 3.6 - 15 */
+    background: radial-gradient(#000 -100%,#fff 60%); /* 标准的语法 */
+}
+.box-person{ padding-top:8px;}
+.box-person li{ height:55px; padding:25px 0 0 115px;}
+.box-btn{ display:block; width:80px; text-align:center; line-height:30px; color:#fff; font-size:14px; height:30px; border-radius:8px; background:#000; margin:45px 0 0 75px;}
+.box-right{ float:right; position:relative; width:800px; height:auto; margin-top:32px; padding: 3px 0 0 3px;}
+.box-right li{ float: left; width: 37px; height: 37px; border: #000 3px double; margin:-3px 0 0 -3px; }
+.box-right .black,.white,.box-right span{ position: absolute; }
+
+</style>
+</head>
+
+<body>
+<div class="box clearfix" id="box">
+	<div class="box-left">
+    	<span id="arrow" class="arrow" >=》</span>
+    	<ul class="box-person">
+        	<li><span class="black"></span></li>
+            <li><span class="white"></span></li>
+        </ul>
+        <a class="box-btn" href="javascript:void(0)">重新开始</a>
+    </div>
+    <div class="box-right" id="QP">
+        <ul class="clearfix">
+        </ul>
+       <!--  <span class="white" style=" left: -20px; top: -20px;"></span>
+       <span class="black" style=" left: 100px; top: 60px;"></span> -->
+    </div>
+</div>
+
+<script>
+	var boxBtn=document.querySelector(".box-btn");//重置
+	var chessWidth=30;
+	var boxUl=document.querySelector(".box-right ul");
+	var arrowNum=document.querySelector("#arrow");
+//	console.log(arrowNum);
+	
+	var arrChess=[];//全局的二维数组
+	var boX=40;
+	
+	function chessBoard(rows){//创建棋盘;一行是20个；rows需要几行
+		
+    for(var y=0;y<=rows;y++){
+        arrChess[y]=[];
+         
+        
+        
+        for(var x=0;x<=20;x++){
+        	arrChess[y][x]=true;
+        	if(x!=20 && y!=rows){
+            	var liMun=document.createElement("li");
+          
+              	boxUl.appendChild(liMun);
+            }
+//            console.log(arrChess[x]);
+//            console.log(arrChess[y]);
+              
+			
+        }
+      
+    }
+
+};
+
+
+chessBoard(10);
+
+ 
+  	 	
+  	 	
+  	 	
+  	 
+
+
+//var QPMun=document.querySelector("#QP");
+//var Black=document.querySelector(".black");
+//Black.onclick=function(){
+//	
+//}
+
+
+
+var chessBool=true;//false表示落白子，true表示落黑子
+var QPnode=document.querySelector("#QP");
+QPnode.onclick=function(e){
+	var _this=this;
+	var Body=document.body;
+	var HTml=document.documentElement;
+    var event=e || window.event;//事件对象
+    var x=event.clientX-this.offsetLeft;//坐标x;
+    var y=event.clientY-this.offsetTop;//坐标y
+    var QPnode=document.getElementById("QP");
+   
+    var boxUl=document.querySelector(".black");
+     var WHite=document.querySelector(".white");
+    
+    var LIiwdth=40;
+    var Qx=Math.round(x/LIiwdth);
+    var Qy=Math.round(y/LIiwdth);
+    var color;
+//  console.log(Qx,Qy);
+    if(arrChess[Qy][Qx]===true){
+			
+		
+    	 var spanNum=document.createElement("span");
+    
+	    if(chessBool){
+	    	spanNum.className="black";
+	    	chessBool=false;
+	    	arrowNum.style.top="113px";
+	    	color="black"
+	    	arrChess[Qy][Qx]="black";
+	    	
+//	    console.log(arrChess[Qy][Qx]);
+	    	
+	    }
+	    else{
+	    	spanNum.className="white";
+	    	chessBool=true;
+	    	arrowNum.style.top="38px";
+	    	color="white"
+	    	arrChess[Qy][Qx]="white";
+	    }
+     
+     	
+    }
+    else{
+    	alert("子已经落！");
+			return;
+    	
+    }
+//   arrChess[x][y]=color;
+//  
+//  whoWinFun(x,y,color)
+    spanNum.setAttribute("style","position: absolute; left:"+(Qx*LIiwdth-chessWidth/2)+"px;top:"+(Qy*LIiwdth-chessWidth/2)+"px");
+    QPnode.appendChild(spanNum);
+    
+    setTimeout(function(){
+    	WIwiWI(Qx,Qy,color);
+    },0);
+    
+//  console.log(Qx,color);
+};
+boxBtn.onclick=
+ function Tian(){//重置
+ 	
+ 	window.location.reload();
+ 	
+ }
+  	
+ function WIwiWI(Qx,Qy,color){
+ 	var num=0;
+  	for( var i=Qx-4;i<=Qx+4;i++){
+  		if(i>=0 && i<=20){
+  			if(arrChess[Qy][i]==color){
+  				num++;
+  			}
+  			else{
+  				num=0;
+  			}
+			if(num==5){
+				 alert(color+"赢");
+				 return window.location.reload();
+			}
+  				
+  			}
+  		}
+  	var num=0;
+  	for(var i=Qy-4;i<=Qy+4;i++){
+  		if(i>=0 && i<=10){
+  			if(arrChess[i][Qx]==color){
+  				num++;
+  			}
+  			else{
+  				num=0;
+  			}
+			if(num==5){
+				 alert(color+"赢");
+				 return window.location.reload();
+			}
+  				
+  		}
+  	}
+  	var num=0;
+	for(var x=Qx-4,y=Qy-4;x<=Qx+4,y<=Qy+4;x++,y++){
+		if(x>=0 && x<=20 && y>=0 && y<=10){
+			if(arrChess[y][x]==color){
+				num++;
+//				console.log(num);
+			}
+			else{
+				num=0;
+			}
+			if(num==5){
+				 alert(color+"赢");
+				 return window.location.reload();
+			}
+			
+				
+		}
+	}
+	var num=0;
+	for(var x=Qx-4,y=Qy+4;x<=Qx+4,y>=Qy-4;x++,y--){
+//		console.log(num);
+		if(x>=0 && x<=20 && y>=0 && y<=10){
+			
+			if(arrChess[y][x]==color){
+				num++;
+				
+			}
+			else{
+				num=0;
+			}
+			if(num==5){
+				 alert(color+"赢");
+				 return window.location.reload();
+			}
+			
+				
+		}
+	}
+  		
+//	console.log(arrChess[Qy][i],num,color);	
+} 	 
+//Init:function(){
+//	var _this=this;
+//	_this.CLASSwidth=_this.boxUl.clientWidth;
+//	
+//	
+//}
+
+</script>
+</body>
+</html>
