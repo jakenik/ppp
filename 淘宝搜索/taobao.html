@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		body,div,a,{margin: 0;padding: 0;}
+		input{outline: none;}
+		.body .btn{background: #ff5400;font-size: 18px;font-family: "微软雅黑";color: #fff;padding: 7px 13px 0 10px;line-height: 18px;height: 17px;}
+		.Text,.Text-2,.Text-3 {width: 473px;height: 34px;border: 3px #ff5400 solid;color: #9c9c9c;background: url(img/search.png) 12px 12px no-repeat ;padding-left: 27px;}
+		.Text-2{border: 3px #c40000 solid;}
+		#Button{width: 122px;height: 40px;background: #ff5400;font-family: "微软雅黑";color: #fff;border: none;}
+		.BUT{background: #c40000 !important;}
+	</style>
+</head>
+<body>
+	<div class="body">
+		<a href="javascript:void(0);" class="btn" >宝贝</a>
+		<a href="javascript:void(0);"  class="color">天猫</a>
+		<a href="javascript:void(0); "> 店铺 </a>
+	</div>
+	<div class="result">
+		<div class="MIDIV" style="">
+			<input type="text" value="好睡眠好床垫" class="Text"   onfocus="javascript:if(this.value=='好睡眠好床垫')this.value='';"/>
+			<input type="button"  value="搜索"/ id="Button" ></div>
+		<div class="MIDIV" style="display: none;">
+			<input type="text" value="童装尚新季" class="Text-2" onfocus="javascript:if(this.value=='好睡眠好床
+垫')this.value='';"/>
+			<input type="button"  value="搜索" id="Button" class="BUT"/></div>
+		<div class="MIDIV" style="display: none;">
+			<input type="text" value="" class="Text-3" onfocus="javascript:if(this.value=='好睡眠好床
+垫')this.value='';"/>
+			<input type="button"  value="搜索" id="Button"/></div>
+	</div>
+	<script>
+		var  Aall=document.querySelectorAll(".body a");
+//		console.log(Aall);
+		var ANum=document.querySelectorAll(".MIDIV");
+		var Color=document.querySelector(".color");
+		var oldPos;
+		
+		for (var i=0;i<Aall.length;i++){
+			Aall[i].index=i;
+			
+			Aall[i].onclick=function(){
+			if(this.className=="btn"){
+				return;
+			}
+//			alert(this.index);
+			var curPOs=this.index;//检索位置
+			
+			
+			
+			
+			if(i=1 ){
+				Color.style.background="#c40000";
+				
+//				console.log(oldPos);
+				
+			}
+			if(curPOs!=1 ){
+				Color.style.background="none";
+				
+//				console.log(oldPos);
+				
+			}
+			
+			for (var x=0;x<Aall.length;x++){
+				
+				if(Aall[x].className=="btn"){
+					oldPos=x;
+//					console.log(x);
+				
+					break;
+				
+					
+					
+				}
+				console.log(oldPos);
+				if(oldPos=1 && curPOs!=1){
+					Color.style.background="none";
+				}
+			}
+			
+			this.className="btn";
+			Aall[oldPos].className=""; 
+//			Aall[curPOs].style.background="none";
+//			console.log(ANum);
+			ANum[curPOs].style.display="block";
+			ANum[oldPos].style.display="none";	
+//			console.log(curPOs);
+			
+			};
+			
+		};
+		
+		
+		
+	</script>
+	
+</body>
+</html>
