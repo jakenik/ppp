@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+.box{border-left:5px solid #F93;border-right:5px solid #F93;border-bottom:10px solid #F93;width:100px;height:60px; position:absolute;top:250px;left:300px;z-index:999; overflow:hidden;}
+.box2{border-left:5px solid #F93;border-right:5px solid #F93;border-bottom:10px solid #F93;width:100px;height:60px; position:absolute;top:250px;left:500px;z-index:999; overflow:hidden;}
+.water{ background:#09F;width:100%; position:absolute; bottom:0px;}
+</style>
+</head>
+ <body>
+<div class="container">
+<div class="box"><div class="water"></div></div>
+<div class="box2"><div class="water"></div></div>
+</div>
+ </body>
+ <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+ <script>
+//width:400,
+//height:300,
+//pic:'water-drop.png',//下雨图片 默认为water-drop.png
+//speed:1000,          //雨速
+//num:100,            //雨滴的密集度
+//dir:['right',160],   //雨的飘向 默认为向右飘 雨滴的偏差
+
+$(function(){
+$(".container").Rain({width:'500',dir:['right',100],speed:3000,num:100,func:back_func});
+
+})
+var i =0;
+function back_func(d){
+if(parseInt($(".box").position()['left']+$(".box").width())>d&&d>parseInt($(".box").position()['left'])){
+if(i>$(".box").height()){
+$(".box .water").animate({height:0});
+i=0;
+return;
+}
+$(".box .water").animate({height:i++});
+}
+
+if(parseInt($(".box2").position()['left']+$(".box2").width())>d&&d>parseInt($(".box2").position()['left'])){
+if(i>$(".box2").height()){
+$(".box2 .water").animate({height:0});
+i=0;
+return;
+}
+$(".box2 .water").animate({height:i++});
+}
+}
+</script>
+ </html>
