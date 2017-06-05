@@ -141,9 +141,8 @@ function eat(){
     for( var i = 0 ; i<bodyNum.length ; i++){
 //  	console.log(snackWidth)
         place += snackWidth/2;
-        console.log(srr[num-place][0])
-        bodyNum[i].style.left=srr[num-place][0] + 'px';
-        bodyNum[i].style.top=srr[num-place][1] + 'px';    
+//      bodyNum[i].style.left=srr[num-place][0] + 'px';
+//      bodyNum[i].style.top=srr[num-place][1] + 'px';    
     }
 }
 

@@ -1,6 +1,6 @@
 //初始化 
  @aColor:#26aea4;
-@color:#666666;
+@color:#fff;
 @fz:100rem;
 .bg(@addr,@x,@y,@w,@h){
     background:url("../img/@{addr}") no-repeat @x @y ~"/" @w @h;
@@ -15,7 +15,7 @@ input,textarea,select{outline: none; font-size:30/@fz;}
 img{ border:0 none; vertical-align: top;}
 img{width: 100%;}
 li{ list-style: none;}
-html{ font-size:625%;/*100%即16px，625%即100px*/}product
+html{ font-size:625%;/*100%即16px，625%即100px*/}
 body{ max-width:640px; min-width:320px; margin:0 auto; background:#fefeff; font-family: "微软雅黑"; font-size:21/@fz; color:@color;}
 *{ margin:0; padding: 0; }
 html,body,.swiper-container{ height: 100%; font-family: "微软雅黑";}
@@ -41,8 +41,8 @@ img{width: 100%;}
 #bg2{.bg("bg2.png",0,0,100%,100%);}
 //.pac-man{width: 0/@fz;height: 0/@fz;border-radius: 50%;border: 175/@fz solid;border-color:  #e6e801 transparent #e6e801 #e6e801;transform-origin: 0 0;}
 
-.title04{.bg("bq.png",0,0,100%,100%);font-size: 80/@fz;text-align: center;padding: 20/@fz 0 20/@fz 0 ;}
-.dw5{font-size: 40/@fz;text-align: center;}
+.title04{font-size: 80/@fz;text-align: center;padding: 20/@fz 0 20/@fz 0 ;color: #fff;}
+.dw5{font-size: 40/@fz;text-align: center;color: #fff;}
 .name{margin: 0 auto;width: 560/@fz;}
 #bg3{.bg("bg3.jpg",0,0,100%,100%);position: absolute;width: 100%;height: 100%;}
 #bg4{.bg("bg3-1.jpg",0,0,100%,100%);position: absolute;width: 100%;height: 100%;}
@@ -54,14 +54,6 @@ img{width: 100%;}
 .dw6{position: absolute; left: 0/@fz; top: 0/@fz;width: 100%;height: 100%; background-color:rgba(5,5,5,0.5);}
 .title07{font-size: 50/@fz;margin: 20/@fz  0/@fz 0/@fz 20/@fz;}
 .tit{overflow:hidden;width: 400/@fz ;height: 60/@fz;margin: 20/@fz  0/@fz 0/@fz 20/@fz;background-color:rgba(5,5,5,0.8);border-radius:30/@fz 30/@fz 30/@fz 30/@fz;& p{background: url(../img/nl.png);width: 10/@fz;height: 100%;background-size:100% 100% ;border-radius:30/@fz 30/@fz 30/@fz 30/@fz;}}
-.face{height: 100%;width: 100%;position: relative;background-color: pink;}
-#playground {height: 90%;width: 100%;float: left;position: relative;}
-.menu {height: 10%;width: 100%;float: left;background-color: skyblue;}
-#snack {height: 40/@fz;width: 40/@fz;background: #ff5758;position: absolute;left: 0px;top: 0px;border-radius:50%;position: relative;}
-.middle{height: 40/@fz;width: 40/@fz;background: #ff5758;position: absolute;bottom: 40/@fz;}
-.tail{height: 40/@fz;width: 40/@fz;background: #ff5758;position: absolute;bottom: 80/@fz;border-radius: 20/@fz 20/@fz 0/@fz 0/@fz;}
-.lefteye,.righteye{position: absolute;border-radius: 50%;background: #fff;width: 20/@fz;height: 20/@fz;bottom:12/@fz; 
-&:before{content: ""; position: absolute;background: #000;width: 10/@fz;height: 10/@fz;border-radius: 50%;top: 5/@fz;left: 5/@fz;}&:after{content: "";position: absolute;width: 4/@fz;height: 4/@fz;border-radius: 50%;background: #fff;top: 5/@fz;left: 10/@fz;}}
 .righteye{right: -5/@fz;}
 .lefteye{left: -5/@fz;}
 #food {height: 40/@fz;width: 40/@fz;background: blue;position: absolute;border-radius: 50%;}
@@ -78,3 +70,4 @@ img{width: 100%;}
 .color2{color: #fff;}
 .dw10{position:absolute;left: 2.4rem;top: 3.6rem;display: flex;font-size: 30/@fz;}
 .dw11{position:absolute;left: 2.1rem;top: 6.6rem;display: flex;font-size: 30/@fz;&{width: 100%;height: 100%;width: 200/@fz;height: 200/@fz;}}
+.dw12{position:absolute;left:50%;top: 8.6rem;display: flex;font-size: 30/@fz;width: 3rem;margin-left: -1.5rem;white-space :normal nowrap ;}

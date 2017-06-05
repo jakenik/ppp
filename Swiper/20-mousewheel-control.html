@@ -45,8 +45,7 @@
 					<div class="ani title03 " swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="7.2s">风</div>
 					<div class="ani title03 " swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="7.5s">景</div>
 				</div>
-				<div class="ani title03 button" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="7.9s">开始
-				</div>
+				
 			</div>
 			<!--第二页-->
 			<div class="swiper-slide" id="feng">
@@ -86,7 +85,7 @@
 				<div class="ani title03  color" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="3s">光</div>
 				</div>
 			</div>
-			<!--第四页-->
+			<!--第五页-->
 			<div class="swiper-slide bg8">
 				<div id="dw9">
 				<div class="ani title03  color" swiper-animate-effect="bounceIn" swiper-animate-duration="4s" swiper-animate-delay="0.3s" >我</div>
@@ -105,7 +104,7 @@
 				<div class="ani title03 color" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="4.3s">.</div>
 				</div>
 			</div>
-			<!--第四页-->
+			<!--第六页-->
 			<div class="swiper-slide "id="bg2">
 				<div class="ani title04" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">个人简介</div>
 				<div class="dw5">
@@ -135,11 +134,11 @@
 						<div class="ani title05" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="6.9s">前端所学地：</div>
 					</div>
 					<div class="name">
-					<div class="ani title05" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="7.5s">杭州若恒信息公司</div>
+					<div class="ani title05" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="7.5s">浙江大学信息技术培训中心</div>
 					</div>
 				</div>
 			</div>
-			<!--第五页-->
+			<!--第七页-->
 			<div class="swiper-slide" id="bg7">
 				<div class="dw6" style="display: none;">
 					<div class="ani title06" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="0.3s">talent</div>
@@ -166,22 +165,6 @@
 				</div>
 				<div class="ani title05 button2" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="0.5s">技能介绍</div>
 			</div>
-			<!--第六页-->
-			<!--<div class="swiper-slide" id="bg5">
-					<div class="face">
-					
-						<div id="playground">
-								
-								<div id="food"></div>
-								
-								<div id="snack"><p class="lefteye"></p><p class="righteye"</p></div>
-							</div>
-							
-							<div class="menu">
-								<div>得分<span id="score"></span></div>
-							</div>
-						</div>
-				</div>-->
 			<div class="swiper-slide bg9">
 				<div class="dw10">
 				<div class="ani title05  color2" swiper-animate-effect="bounceIn" swiper-animate-duration="4s" swiper-animate-delay="0.3s" >谢</div>
@@ -190,10 +173,10 @@
 				<div class="ani title05  color2" swiper-animate-effect="bounceIn" swiper-animate-duration="4s" swiper-animate-delay="2s">看</div>
 				</div>
 				<div class="ani title05  color2 dw11" swiper-animate-effect="bounceIn" swiper-animate-duration="4s" swiper-animate-delay="2.5s"><img src="img/eweima.png"/></div>
+				<div class="ani title05  color2 dw12" swiper-animate-effect="bounceIn" swiper-animate-duration="4s" swiper-animate-delay="3s">电话：185-5753-0997</div>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/index2.js" ></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.animate1.0.2.min.js"></script>
 	<script type="text/javascript" src="js/fontAuto.js">
@@ -220,19 +203,7 @@
 	 });
 	 var buttonNode=$(".button");
 	 
-	 buttonNode.click(function(){
-	 	$("#bg").append('<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop"><source src="朴树 - 平凡之路.mp3" type="audio/ogg" />');
-	 	
-	 	
-//	 	var divDW4=document.querySelector(".dw4");
-//	    divDW4.style.display="block";
-	 })
-	  //func函数定义
-//		function func()
-//		{
-//		
-//		}
-//		setTimeout(func,"8000");//三秒后执行
+	 	$("#bg").append('<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop"><source src="mp3/pingfanzhilu.mp3" type="audio/ogg" />');
 
 var bool=false;
 $(".button2").click(function(){
@@ -288,7 +259,7 @@ window.addEventListener('touchend',function(){
 var p=$('#bg6').hasClass('swiper-slide-active');
 //console.log(p)
 if(p==true){
-$("#bg6").append('<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop" class="audioNode"><source src="下雨声.mp3" type="audio/ogg" />');
+$("#bg6").append('<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop" class="audioNode"><source src="mp3/xiayusheng.mp3" type="audio/ogg" />');
 }
 if(p==false){//翻页后删除声音只使用手机端
 //	console.log(1)
@@ -299,7 +270,7 @@ $(".audioNode").remove();
 window.addEventListener('touchend',function(){
 var p2=$('#feng').hasClass('swiper-slide-active');
 if(p2==true){
-$("#feng").append('<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop" class="audioNode2"><source src="风声.mp3" type="audio/ogg" />');
+$("#feng").append('<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop" class="audioNode2"><source src="mp3/fengsheng.mp3" type="audio/ogg" />');
 }
 if(p2==false){//翻页后删除声音只使用手机端
 //	console.log(1)
@@ -313,7 +284,7 @@ var p3=$('.bg5').hasClass('swiper-slide-active');
 console.log(p3)
 if(p3==true){
 	
-$(".bg5").append('<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop" class="audioNode3"><source src="天晴了.mp3" type="audio/ogg" />');
+$(".bg5").append('<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop" class="audioNode3"><source src="mp3/tianqingle.mp3" type="audio/ogg" />');
 }
 if(p3==false){//翻页后删除声音只使用手机端
 //	console.log(1)

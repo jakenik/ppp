@@ -63,14 +63,14 @@ html {
   font-size: 625%;
   /*100%即16px，625%即100px*/
 }
-product body {
+body {
   max-width: 640px;
   min-width: 320px;
   margin: 0 auto;
   background: #fefeff;
   font-family: "微软雅黑";
   font-size: 0.21rem;
-  color: #666666;
+  color: #fff;
 }
 * {
   margin: 0;
@@ -197,14 +197,15 @@ img {
   background: url("../img/bg2.png") no-repeat 0 0 / 100% 100%;
 }
 .title04 {
-  background: url("../img/bq.png") no-repeat 0 0 / 100% 100%;
   font-size: 0.8rem;
   text-align: center;
   padding: 0.2rem 0 0.2rem 0;
+  color: #fff;
 }
 .dw5 {
   font-size: 0.4rem;
   text-align: center;
+  color: #fff;
 }
 .name {
   margin: 0 auto;
@@ -275,80 +276,6 @@ img {
   height: 100%;
   background-size: 100% 100% ;
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
-}
-.face {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background-color: pink;
-}
-#playground {
-  height: 90%;
-  width: 100%;
-  float: left;
-  position: relative;
-}
-.menu {
-  height: 10%;
-  width: 100%;
-  float: left;
-  background-color: skyblue;
-}
-#snack {
-  height: 0.4rem;
-  width: 0.4rem;
-  background: #ff5758;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 50%;
-  position: relative;
-}
-.middle {
-  height: 0.4rem;
-  width: 0.4rem;
-  background: #ff5758;
-  position: absolute;
-  bottom: 0.4rem;
-}
-.tail {
-  height: 0.4rem;
-  width: 0.4rem;
-  background: #ff5758;
-  position: absolute;
-  bottom: 0.8rem;
-  border-radius: 0.2rem 0.2rem 0rem 0rem;
-}
-.lefteye,
-.righteye {
-  position: absolute;
-  border-radius: 50%;
-  background: #fff;
-  width: 0.2rem;
-  height: 0.2rem;
-  bottom: 0.12rem;
-}
-.lefteye:before,
-.righteye:before {
-  content: "";
-  position: absolute;
-  background: #000;
-  width: 0.1rem;
-  height: 0.1rem;
-  border-radius: 50%;
-  top: 0.05rem;
-  left: 0.05rem;
-}
-.lefteye:after,
-.righteye:after {
-  content: "";
-  position: absolute;
-  width: 0.04rem;
-  height: 0.04rem;
-  border-radius: 50%;
-  background: #fff;
-  top: 0.05rem;
-  left: 0.1rem;
 }
 .righteye {
   right: -0.05rem;
@@ -445,4 +372,14 @@ img {
   height: 100%;
   width: 2rem;
   height: 2rem;
+}
+.dw12 {
+  position: absolute;
+  left: 50%;
+  top: 8.6rem;
+  display: flex;
+  font-size: 0.3rem;
+  width: 3rem;
+  margin-left: -1.5rem;
+  white-space: normal nowrap ;
 }
