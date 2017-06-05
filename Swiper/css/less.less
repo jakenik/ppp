@@ -1,0 +1,73 @@
+//初始化 
+ @aColor:#26aea4;
+@color:#fff;
+@fz:100rem;
+.bg(@addr,@x,@y,@w,@h){
+    background:url("../img/@{addr}") no-repeat @x @y ~"/" @w @h;
+}
+body,header,section,nav,footer,article,div,h1,h2,h3,h4,form,p,dl,dt,dd,ul,li,span,a,em,i,strong,b,img,form{ margin:0; padding:0; -ms-touch-action: none;/*去除ie默认触屏动作*/ box-sizing: border-box;/*怪异盒子模型*/}
+i,em{ font-style: normal;}
+a{ 
+    text-decoration: none; color:#656769;}
+    a:hover{color: @aColor;border-bottom: #26aea4 4/@fz solid;}
+
+input,textarea,select{outline: none; font-size:30/@fz;}
+img{ border:0 none; vertical-align: top;}
+img{width: 100%;}
+li{ list-style: none;}
+html{ font-size:625%;/*100%即16px，625%即100px*/}
+body{ max-width:640px; min-width:320px; margin:0 auto; background:#fefeff; font-family: "微软雅黑"; font-size:21/@fz; color:@color;}
+*{ margin:0; padding: 0; }
+html,body,.swiper-container{ height: 100%; font-family: "微软雅黑";}
+img{width: 100%;}
+#bg{background: url(../img/bg.png)no-repeat;background-size: 100% 100%;}
+.swiper-slide:nth-child(2){ background: #000000;  color: #fff;}
+.swiper-slide:nth-child(3){ background: #000000;  color: #fff;}
+.title01{ position: absolute;  left: 90/@fz; top: 110/@fz;font-size: 30/@fz; }
+.title01-01{  left: 135/@fz; top: 110/@fz; }
+.title02{position: absolute;  left: 90/@fz; top: 155/@fz;font-size: 30/@fz}
+.title02-01{left: 135/@fz; top: 155/@fz;}
+.title02-02{left: 180/@fz; top: 155/@fz;}
+.title02-03{left: 225/@fz; top: 155/@fz;}
+.title02-04{left: 270/@fz; top: 155/@fz;}
+.title02-05{left: 315/@fz; top: 155/@fz;}
+.dw{position: absolute;  left: 315/@fz; top: 200/@fz;font-size: 30/@fz;height:30/@fz ;display: flex;}
+.title03{margin-right: 10/@fz;}
+.dw2{position: absolute; left: 50%; top: 280/@fz;font-size: 50/@fz;height:60/@fz ;display: flex;margin-left: -80/@fz;}
+.dw3{position: absolute; left: 50%; top: 380/@fz;font-size: 60/@fz;height:60/@fz ;display: flex;margin-left: -210/@fz;}
+.dw4{position: absolute; left: 0/@fz; top: 0/@fz;width: 100%;height: 100%;padding-top: 600/@fz ; background-color:rgba(5,5,5,0.5);& img{width: 100%;height: 100%;margin: 5/@fz 0px 0px 5/@fz;bottom: 0/@fz;}}
+.dwt{position: absolute;  bottom: 0/@fz;}
+.button{.bg("button.png",0,0,100%,100%);position: absolute;left: 50%;top: 50%;width: 200/@fz;height: 100/@fz;margin: -50/@fz 0 0 -100/@fz;text-align: center;font-size: 40/@fz;padding-top: 10/@fz;}
+#bg2{.bg("bg2.png",0,0,100%,100%);}
+//.pac-man{width: 0/@fz;height: 0/@fz;border-radius: 50%;border: 175/@fz solid;border-color:  #e6e801 transparent #e6e801 #e6e801;transform-origin: 0 0;}
+
+.title04{font-size: 80/@fz;text-align: center;padding: 20/@fz 0 20/@fz 0 ;color: #fff;}
+.dw5{font-size: 40/@fz;text-align: center;color: #fff;}
+.name{margin: 0 auto;width: 560/@fz;}
+#bg3{.bg("bg3.jpg",0,0,100%,100%);position: absolute;width: 100%;height: 100%;}
+#bg4{.bg("bg3-1.jpg",0,0,100%,100%);position: absolute;width: 100%;height: 100%;}
+#bg6{.bg("bg4.jpg",0,0,100%,100%);}
+.color{color: #000;}
+#bg7{.bg("bg7.jpg",0,0,100%,100%);}
+.title06{font-size: 50/@fz;text-align: center;width: 200/@fz;margin: 40/@fz auto;}
+.button2{.bg("button.png",0,0,100%,100%);position: absolute;left: 50%;bottom: 100/@fz;width: 200/@fz;height: 100/@fz;margin-left: -100/@fz;text-align: center;font-size: 40/@fz;padding-top: 10/@fz;}
+.dw6{position: absolute; left: 0/@fz; top: 0/@fz;width: 100%;height: 100%; background-color:rgba(5,5,5,0.5);}
+.title07{font-size: 50/@fz;margin: 20/@fz  0/@fz 0/@fz 20/@fz;}
+.tit{overflow:hidden;width: 400/@fz ;height: 60/@fz;margin: 20/@fz  0/@fz 0/@fz 20/@fz;background-color:rgba(5,5,5,0.8);border-radius:30/@fz 30/@fz 30/@fz 30/@fz;& p{background: url(../img/nl.png);width: 10/@fz;height: 100%;background-size:100% 100% ;border-radius:30/@fz 30/@fz 30/@fz 30/@fz;}}
+.righteye{right: -5/@fz;}
+.lefteye{left: -5/@fz;}
+#food {height: 40/@fz;width: 40/@fz;background: blue;position: absolute;border-radius: 50%;}
+.body {height: 40/@fz;width: 40/@fz;background: #ff5758;position: absolute;left: 0px;top: 0px;border-radius: 50%;}
+#score {font-size: 60/@fz;font-weight: bold;color: red;}
+.menu div {font-size: 40/@fz;font-weight: bold;}
+.rains{position: absolute;width: 100%;height: 100%;& p{width: 1/@fz;height:20/@fz ;position: absolute;background: #d7d7d7;transform:rotate(30deg);left: 0/@fz;top: 0/@fz;}}
+.dw7{position:absolute;left: 2.4rem;top: 2rem;display: flex;font-size: 40/@fz;}
+.dw8{position:absolute;left: 4.7rem;top: 2.6rem;display: flex;font-size: 50/@fz;}
+#dw9{position:absolute;left: 0.4rem;top: 1.6rem;display: flex;font-size: 30/@fz;}
+.bg5{.bg("bg5.png",0,0,100%,100%);}
+.bg8{.bg("bg8.png",0,0,100%,100%);}
+.bg9{.bg("bg9.png",0,0,100%,100%);}
+.color2{color: #fff;}
+.dw10{position:absolute;left: 2.4rem;top: 3.6rem;display: flex;font-size: 30/@fz;}
+.dw11{position:absolute;left: 2.1rem;top: 6.6rem;display: flex;font-size: 30/@fz;&{width: 100%;height: 100%;width: 200/@fz;height: 200/@fz;}}
+.dw12{position:absolute;left:50%;top: 8.6rem;display: flex;font-size: 30/@fz;width: 3rem;margin-left: -1.5rem;white-space: nowrap;}
