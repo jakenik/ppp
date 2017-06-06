@@ -13,7 +13,7 @@ var slider={
 	lileftbottom:$(".leftbottom"),//下左
 	lirightbottom:$(".rightbottom"),//下右
 	partnerul:$(".partnerul"),//ul
-	partnerli:$(".partnerul li:first"),//li第一个
+	partnerli:$(".partnerul li"),//li第一个
 	bool:false,
 	Headlinesshow:function(){//功能标题显示
 		$('.options li,.options dt').mouseover(function(){
@@ -50,7 +50,6 @@ var slider={
 		 	that.SpanNode.eq(oldPos).removeClass("center");
 		 	that.positionDIV.eq(curPos).fadeIn("slow");
 		 	that.positionDIV.eq(oldPos).fadeOut("slow");
-		 	console.log(curPos,oldPos)
 		})
 		that.aleft.click(function(){
 			var oldPos=$(".Js-slider .center").index();
@@ -111,24 +110,20 @@ var slider={
 	},
 	Switchthepicture:function(){//左移动右移动
 		var that=this;
+		var liwidth=that.partnerli.innerWidth();
 		that.lileftbottom.click(function(){
-			that.bool=true;
-		if(that.bool==true){
-			$(".partnerul li:first").stop().animate({marginLeft:"-191px"},"slow",function(){
-				that.partnerul.append($(".partnerul li:first"));
-				$(".partnerul li:first").css({marginLeft:"10px"});
-				$(".partnerul li:last").css({marginLeft:"0px"});
-				that.bool=false;
-			});
-		}
+		that.partnerli.stop();
+		var partnerli=$(".partnerul li:last");
+		that.partnerul.prepend($(".partnerul li:last"));
+		partnerli.animate({marginLeft:-liwidth},200);		      
+		    that.partnerli.removeAttr("style");	
 		})
 		that.lirightbottom.click(function(){
-			that.partnerul.stop().prepend($(".partnerul li:last"));
-			$(".partnerul li:last").css({margin:"0px 0px 0px -2019px"})			
-			$(".partnerul li:first").animate({marginLeft:"191px"},"slow",function(){			
-				$(".partnerul li:first").css({marginLeft:"11px"});
-				$(".partnerul li:last").css({marginLeft:"0px"});
-			});
+			that.partnerli.stop();
+			 that.partnerul.prepend($(".partnerul li:last"));
+			 $(".partnerul li:first").css({marginLeft:-liwidth})
+			$(".partnerul li:first").animate({marginLeft:0},200);
+			that.partnerli.removeAttr("style");	  
 		})
 	},
 	imgtbg:function(){//返回顶部
