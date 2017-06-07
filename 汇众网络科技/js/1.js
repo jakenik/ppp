@@ -77,14 +77,16 @@ var slider={
 		var that=this;
 		that.liNode.mouseenter(function(){
 			$(this).animate({width:"380px"},300);
-			
+
 		})
-		that.liNode.mouseleave(function(){
-			console.log(1)
-			that.liNode.animate({width:"0px"},300);
-			
-		})
-		
+		for (i=0;i<that.liNode.length;i++){
+			that.liNode[i].index=i;
+			that.liNode[i].onmouseleave=function(){
+				var curPOs=this.index;
+				that.liNode.eq(curPOs).next().animate({width:"0px"},300);
+				that.liNode.eq(curPOs).prev().animate({width:"0px"},300);
+			}
+		}
 	},
 	Moveup:function(){//移动上移动下
 		var that=this;
