@@ -39,3 +39,16 @@ $('.img-tbg').click(function(){
 				$(".img-tbg").fadeOut();
 			}
 		})
+//
+$('.bodydl').isotope({
+	itemSelector: '.bodydl li'
+});
+
+$('.Selectul li').click(function(){
+	$(this).addClass('.a').siblings('li').removeClass('current');
+	var dataValue=$(this).attr('data');
+	$('.bodydl').isotope({
+		itemSelector: '.bodydl li',
+		filter:dataValue
+	});
+});
