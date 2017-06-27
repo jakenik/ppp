@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><title>app</title><meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><link href=./static/css/app.81db2f7acbee7476f1d7a0dab8fef27d.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.5948c0629f3e01b6b688.js></script><script type=text/javascript src=./static/js/vendor.e4dbae0e5472d1dd35ff.js></script><script type=text/javascript src=./static/js/app.7c37839ed67ca3966b90.js></script></body></html><script type=text/javascript>window.alert = function(str)  
+        {  //更换alert原型
+         var alertFram = document.createElement("DIV");  
+         alertFram.id="alertFram";  
+         alertFram.style.position = "absolute";
+         alertFram.style.width = "84px"; 
+         alertFram.style.height = "37px"; 
+         alertFram.style.left = "50%";  
+         alertFram.style.top = "50%";  
+         alertFram.style.marginLeft = "-42px";  
+         alertFram.style.marginTop = "-18px";   
+         alertFram.style.background = "#737373";  
+         alertFram.style.textAlign = "center";  
+         alertFram.style.lineHeight = "37px"; 
+         alertFram.style.color = "#fff";
+         alertFram.style.borderRadius = "5px";
+         alertFram.style.fontSize = "12px";
+         alertFram.style.zIndex = "22";
+         alertFram.innerHTML=str;    
+         document.body.appendChild(alertFram);  
+         alertFram.focus();
+         setTimeout(function a(){
+         	document.querySelector("#alertFram").parentNode.removeChild(document.querySelector("#alertFram"));
+         },1500);
+        }</script><script src=https://cdn.bootcss.com/jquery/1.12.4/jquery.js></script>

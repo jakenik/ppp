@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,ul,li,img,a,span{ margin:0; padding:0;}
+li{ list-style:none;}
+img{ border:0 none; vertical-align:top;}
+body{ background:#f7f7f7;}
+/*主要*/
+.main{ width:1000px; margin: 40px auto 0; }
+.main_Left{ float: left; position: relative; width: 456px; background: #fff; }
+.main_bigImg{ position: absolute; left: 457px; top: 37px; width: 480px; height: 360px; border:solid 1px #cfcbcf; background: #fff; overflow: hidden; }
+.main_MiddleImg{ position: relative; width: 440px; height: 440px; margin: 23px 0 0 7px; border:solid 1px #cfcbcf;overflow: hidden; }
+.main_board{ position: absolute; width: 262px; height: 198px;  background: url(../images/btn_bg.png); overflow: hidden; text-indent: -99em;}
+.main_smallImg{ height: 60px; margin: 34px 0 0 38px; padding-bottom: 11px;}
+.main_smallImg li{ float: left; position: relative; width: 58px; height: 58px; border:solid 1px #f7f7f7; margin-right: 17px; }
+.main_smallImg i{ position: absolute; left: 25px; top: -15px; width: 10px; height: 6px;  background: url(../images/box_btn.png) no-repeat -2px -3px; overflow: hidden; text-indent: -99em; display: none;}
+.main_smallImg .main_imgCur{ border:#c5c3c8 1px solid; }
+.main_imgCur i{ display: block; }
