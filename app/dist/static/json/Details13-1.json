@@ -1,13 +1,13 @@
 [
 	{
 		"toUrl":"#1",
-		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1706/big201706081401352580.jpg",
+		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1704/big201704281422488381.jpg",
 		"goods":"有货",
 		"goodsnbe":"900",
-		"color":"白色",
-		"Item":"372207",
+		"color":"绿色",
+		"Item":"372238",
 		"season":"夏",
-		"series":"校园文艺",
+		"series":"都市生活",
 		"Material":"棉",
 		"classification":"衬衫",
 		"style":"流行",
@@ -34,13 +34,13 @@
 	},
 	{
 		"toUrl":"#2",
-		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1706/big201706081401378375.jpg",
+		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1704/big201704281422503302.jpg",
 		"goods":"有货",
 		"goodsnbe":"900",
-		"color":"白色",
-		"Item":"372207",
+		"color":"绿色",
+		"Item":"372238",
 		"season":"夏",
-		"series":"校园文艺",
+		"series":"都市生活",
 		"Material":"棉",
 		"classification":"衬衫",
 		"style":"流行",
@@ -67,13 +67,13 @@
 	},
 	{
 		"toUrl":"#3",
-		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1706/big201706081401393431.jpg",
+		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1704/big201704281422520307.jpg",
 		"goods":"有货",
 		"goodsnbe":"900",
-		"color":"白色",
-		"Item":"372207",
+		"color":"黑色",
+		"Item":"372238",
 		"season":"夏",
-		"series":"校园文艺",
+		"series":"都市生活",
 		"Material":"棉",
 		"classification":"衬衫",
 		"style":"流行",
@@ -81,9 +81,6 @@
 		"description":"",
 		"sizes":[
 			{
-				"size":"S",
-				"number":"90"
-			},{
 				"size":"M",
 				"number":"130"
 			},{
@@ -92,21 +89,18 @@
 			},{
 				"size":"XL",
 				"number":"440"
-			},{
-				"size":"XXL",
-				"number":"90"
 			}
 		]
 	},
 	{
 		"toUrl":"#4",
-		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1706/big201706081401403517.jpg",
+		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1704/big201704281422540470.jpg",
 		"goods":"有货",
 		"goodsnbe":"900",
-		"color":"白色",
-		"Item":"372207",
+		"color":"黑色",
+		"Item":"372238",
 		"season":"夏",
-		"series":"校园文艺",
+		"series":"都市生活",
 		"Material":"棉",
 		"classification":"衬衫",
 		"style":"流行",
@@ -114,9 +108,6 @@
 		"description":"",
 		"sizes":[
 			{
-				"size":"S",
-				"number":"90"
-			},{
 				"size":"M",
 				"number":"130"
 			},{
@@ -125,21 +116,18 @@
 			},{
 				"size":"XL",
 				"number":"440"
-			},{
-				"size":"XXL",
-				"number":"90"
 			}
 		]
 	},
 	{
 		"toUrl":"#5",
-		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1706/big201706081401427082.jpg",
+		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1704/big201704281422550836.jpg",
 		"goods":"有货",
 		"goodsnbe":"900",
-		"color":"白色",
-		"Item":"372207",
+		"color":"精白",
+		"Item":"372238",
 		"season":"夏",
-		"series":"校园文艺",
+		"series":"都市生活",
 		"Material":"棉",
 		"classification":"衬衫",
 		"style":"流行",
@@ -147,11 +135,8 @@
 		"description":"",
 		"sizes":[
 			{
-				"size":"S",
-				"number":"90"
-			},{
 				"size":"M",
-				"number":"130"
+				"number":"缺货"
 			},{
 				"size":"L",
 				"number":"340"
@@ -166,46 +151,43 @@
 	},
 	{
 		"toUrl":"#6",
-		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1706/big201706081401440703.jpg",
-		"goods":"有货",
-		"goodsnbe":"660",
-		"Item":"372207",
+		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1704/big201704281422574080.jpg",
+		"goods":"精白",
+		"goodsnbe":"900",
+		"color":"黑色",
+		"Item":"372238",
 		"season":"夏",
-		"series":"校园文艺",
+		"series":"都市生活",
 		"Material":"棉",
 		"classification":"衬衫",
 		"style":"流行",
 		"prompt":"",
 		"description":"",
-		"color":"浅蓝",
 		"sizes":[
 			{
-				"size":"S",
-				"number":"60"
-			},{
 				"size":"M",
-				"number":"180"
+				"number":"缺货"
 			},{
 				"size":"L",
-				"number":"440"
+				"number":"340"
 			},{
 				"size":"XL",
-				"number":"140"
+				"number":"440"
 			},{
 				"size":"XXL",
-				"number":"30"
+				"number":"90"
 			}
 		]
 	},
 	{
 		"toUrl":"#7",
-		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1706/big201706081401450470.jpg",
-		"goods":"有货",
-		"goodsnbe":"660",
-		"color":"浅蓝",
-		"Item":"372207",
+		"imgUrl":"https://img.sanfu.com/img/goods/photos/big/1704/big201704281422593174.jpg",
+		"goods":"精白",
+		"goodsnbe":"900",
+		"color":"黑色",
+		"Item":"372238",
 		"season":"夏",
-		"series":"校园文艺",
+		"series":"都市生活",
 		"Material":"棉",
 		"classification":"衬衫",
 		"style":"流行",
@@ -213,20 +195,17 @@
 		"description":"",
 		"sizes":[
 			{
-				"size":"S",
-				"number":"60"
-			},{
 				"size":"M",
-				"number":"180"
+				"number":"缺货"
 			},{
 				"size":"L",
-				"number":"440"
+				"number":"340"
 			},{
 				"size":"XL",
-				"number":"140"
+				"number":"440"
 			},{
 				"size":"XXL",
-				"number":"30"
+				"number":"90"
 			}
 		]
 	}

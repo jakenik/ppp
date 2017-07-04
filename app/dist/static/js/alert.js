@@ -15,7 +15,7 @@ window.alert = function(str)
          alertFram.style.color = "#fff";
          alertFram.style.borderRadius = "5px";
          alertFram.style.fontSize = "12px";
-         alertFram.style.zIndex = "22";
+         alertFram.style.zIndex = "99999";
          alertFram.innerHTML=str;    
          document.body.appendChild(alertFram);  
          alertFram.focus();
