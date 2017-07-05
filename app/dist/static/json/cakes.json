@@ -1,40 +1,52 @@
 [
 	{
-		"toUrl": "#1",
-		"imgUrl": "https://img.sanfu.com/img/goods/list/201705151350477988.jpg",
+		"toUrl": "/selllikehotcakes1",
+		"imgUrl": "https://img.sanfu.com/img/goods/list/201706081406168600.jpg",
 		"imgUrli": "http://img.sanfu.com/img/index_new/summary.png",
-		"digital":"￥71.1",
-		"Cross":"￥79.0"
+		"digital":"￥62.1",
+		"Cross":"31",
+		"Cross2":"￥69.0",
+		"text":"三福2017夏装新品圆领男印花T恤 休闲短袖亚麻上衣男372251"
 	}, {
-		"toUrl": "#2",
-		"imgUrl": "https://img.sanfu.com/img/goods/list/201705261906510043.jpg",
+		"toUrl": "/selllikehotcakes2",
+		"imgUrl": "https://img.sanfu.com/img/goods/list/201701131709125113.jpg",
 		"imgUrli": "http://img.sanfu.com/img/index_new/summary.png",
-		"digital":"￥53.1",
-		"Cross":"￥59.0"
+		"digital":"￥26.1",
+		"Cross":"89",
+		"Cross2":"￥29.0",
+		"text":"三福2017夏装新品圆领男印花T恤 休闲短袖亚麻上衣男372251"
 	}, {
-		"toUrl": "#3",
-		"imgUrl": "https://img.sanfu.com/img/goods/list/201705191015449272.jpg",
+		"toUrl": "/selllikehotcakes3",
+		"imgUrl": "https://img.sanfu.com/img/goods/list/201706291731525219.jpg",
 		"imgUrli": "http://img.sanfu.com/img/index_new/summary.png",
-		"digital":"￥53.1",
-		"Cross":"￥59.0"
+		"digital":"￥62.1",
+		"Cross":"85",
+		"Cross2":"￥69.0",
+		"text":"三福2017夏装新品圆领男印花T恤 休闲短袖亚麻上衣男372251"
 	},
 	{
-		"toUrl": "#4",
-		"imgUrl": "https://img.sanfu.com/img/goods/list/201705031136228600.jpg",
-		"imgUrli": "http://img.sanfu.com/img/index_new/summary.png",
-		"digital":"￥44.1",
-		"Cross":"￥49.0"
-	}, {
-		"toUrl": "#5",
-		"imgUrl": "https://img.sanfu.com/img/goods/list/201704281528258074.jpg",
+		"toUrl": "/selllikehotcakes4",
+		"imgUrl": "https://img.sanfu.com/img/goods/list/201706161050559135.jpg",
 		"imgUrli": "http://img.sanfu.com/img/index_new/summary.png",
 		"digital":"￥62.1",
-		"Cross":"￥69.0"
+		"Cross":"108",
+		"Cross2":"￥69.0",
+		"text":"三福2017夏装新品圆领男印花T恤 休闲短袖亚麻上衣男372251"
 	}, {
-		"toUrl": "#6",
-		"imgUrl": "https://img.sanfu.com/img/goods/list/201705240947446960.jpg",
+		"toUrl": "/selllikehotcakes5",
+		"imgUrl": "https://img.sanfu.com/img/goods/list/201705241439469990.jpg",
 		"imgUrli": "http://img.sanfu.com/img/index_new/summary.png",
-		"digital":"￥62.1",
-		"Cross":"￥69.0"
+		"digital":"￥53.1",
+		"Cross":"130",
+		"Cross2":"￥59.0",
+		"text":"三福2017夏装新品圆领男印花T恤 休闲短袖亚麻上衣男372251"
+	}, {
+		"toUrl": "/selllikehotcakes6",
+		"imgUrl": "https://img.sanfu.com/img/goods/list/201704121733072188.jpg",
+		"imgUrli": "http://img.sanfu.com/img/index_new/summary.png",
+		"digital":"￥107.1",
+		"Cross":"74",
+		"Cross2":"￥119.0",
+		"text":"三福2017夏装新品圆领男印花T恤 休闲短袖亚麻上衣男372251"
 	}
 ]
