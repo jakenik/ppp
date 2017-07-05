@@ -1,22 +1,18 @@
 [
 	{
-		"toUrl":"/youth",
-		"imgUrl":"https://img.sanfu.com/img/template/201706260948511677.jpg"
+		"toUrl":"/youth2",
+		"imgUrl":"https://img.sanfu.com/img/template/201706301631491321.jpg"
 	},
 	{
-		"toUrl":"#2",
+		"toUrl":"/youth",
+		"imgUrl":"./static/img/slide5.jpg"
+	},
+	{
+		"toUrl":"/youth3",
 		"imgUrl":"./static/img/slide2.jpg"
 	},
 	{
-		"toUrl":"#3",
-		"imgUrl":"./static/img/slide3.jpg"
-	},
-	{
 		"toUrl":"#4",
-		"imgUrl":"./static/img/slide4.jpg"
-	},
-	{
-		"toUrl":"#5",
-		"imgUrl":"./static/img/slide5.jpg"
+		"imgUrl":"https://img.sanfu.com/img/template/201707031520413647.jpg"
 	}
 ]
