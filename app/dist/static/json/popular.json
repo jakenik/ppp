@@ -2,10 +2,10 @@
 	{	
 		"toUrl1":[
 			{
-				"toUrl": "#1",
+				"toUrl": "/fashion",
 				"imgUrl": "https://img.sanfu.com/img/template/201703221533051904.jpg"
 			}, {
-				"toUrl": "#3",
+				"toUrl": "/fashion3",
 				"imgUrl": "https://img.sanfu.com/img/template/201703171729079990.jpg"
 			}
 		]
@@ -13,10 +13,10 @@
 	{
 		"toUrl2":[			
 			{
-				"toUrl": "#2",
+				"toUrl": "/fashion2",
 				"imgUrl": "https://img.sanfu.com/img/template/201706031732595089.jpg"
 			}, {
-				"toUrl": "#4",
+				"toUrl": "/fashion4",
 				"imgUrl": "https://img.sanfu.com/img/template/201703181445375243.jpg"
 			}
 		]
