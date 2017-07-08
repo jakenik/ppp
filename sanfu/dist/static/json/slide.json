@@ -1,0 +1,18 @@
+[
+	{
+		"toUrl":"/youth2",
+		"imgUrl":"https://img.sanfu.com/img/template/201706301631491321.jpg"
+	},
+	{
+		"toUrl":"/youth",
+		"imgUrl":"./static/img/slide5.jpg"
+	},
+	{
+		"toUrl":"/youth3",
+		"imgUrl":"./static/img/slide2.jpg"
+	},
+	{
+		"toUrl":"/vip",
+		"imgUrl":"https://img.sanfu.com/img/template/201707031520413647.jpg"
+	}
+]

@@ -1,0 +1,70 @@
+[
+	{	
+		"toUrl1":[
+			{
+				"toUrl": "/classification3",
+				"imgUrl": "https://img.sanfu.com/img/template/201706211136247872.jpg",
+				"digital": "",
+				"Cross": "",
+				"Cross2": "",
+				"imgs":""
+			}, {
+				"toUrl": "/jeans2",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201703241127313972.jpg",
+				"text":"三福2017夏装新品",
+				"digital": "￥89.1",
+				"Cross": "99",
+				"Cross2": "￥99.0",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			},
+			{
+				"toUrl": "/jeans4",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201705181554472238.jpg",
+				"text":"三福2017夏装新品",
+				"digital": "￥143.1",
+				"Cross": "159",
+				"Cross2": "￥159.0",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			}
+		]
+	},
+	{
+		"toUrl2":[			
+			{
+				"toUrl": "/jeans1",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201706221027508454.jpg",
+				"digital": "￥89.1",
+				"Cross": "99",
+				"Cross2": "￥99.0",
+				"text":"三福2017夏装新品",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			}, {
+				"toUrl": "/jeans3",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201706081345274065.jpg",
+				"digital": "￥71.1",
+				"Cross": "79",
+				"Cross2": "￥79.0",
+				"text":"三福2017夏装新品",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			},
+			{
+				"toUrl": "/jeans5",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201704171659003060.jpg",
+				"digital": "￥143.1",
+				"Cross": "159",
+				"Cross2": "￥159.0",
+				"text":"三福2017夏装新品",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			},
+			{
+				"toUrl": "/classification3",
+				"imgUrl": "https://img.sanfu.com/img/index_new/more.png",
+				"digital": "",
+				"Cross": "",
+				"Cross2": "",
+				"text":"",
+				"imgs":""
+			}
+		]
+	}
+]

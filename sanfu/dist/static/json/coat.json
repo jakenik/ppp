@@ -1,0 +1,70 @@
+[
+	{	
+		"toUrl1":[
+			{
+				"toUrl": "/classification2",
+				"imgUrl": "https://img.sanfu.com/img/template/201706211136144062.jpg",
+				"digital": "",
+				"Cross": "",
+				"Cross2": "",
+				"imgs":""
+			}, {
+				"toUrl": "/Topcoat2",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201706141500576289.jpg",
+				"text":"三福2017夏装新品",
+				"digital": "￥53.1",
+				"Cross": "59",
+				"Cross2": "￥59.0",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			},
+			{
+				"toUrl": "/Topcoat4",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201702271008196605.jpg",
+				"text":"三福2017夏装新品",
+				"digital": "￥89.1",
+				"Cross": "99",
+				"Cross2": "￥99.0",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			}
+		]
+	},
+	{
+		"toUrl2":[			
+			{
+				"toUrl": "/Topcoat1",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201705151350477988.jpg",
+				"digital": "￥62.1",
+				"Cross": "69",
+				"Cross2": "￥69.0",
+				"text":"三福2017夏装新品",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			}, {
+				"toUrl": "/Topcoat3",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201704141515255980.jpg",
+				"digital": "￥62.1",
+				"Cross": "69",
+				"Cross2": "￥69.0",
+				"text":"三福2017夏装新品",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			},
+			{
+				"toUrl": "/Topcoat5",
+				"imgUrl": "https://img.sanfu.com/img/goods/list/201702181634345278.jpg",
+				"digital": "￥53.1",
+				"Cross": "59",
+				"Cross2": "￥59.0",
+				"text":"三福2017夏装新品",
+				"imgs":"//img.sanfu.com/img/index_boy/xin.png"
+			},
+			{
+				"toUrl": "/classification2",
+				"imgUrl": "https://img.sanfu.com/img/index_new/more.png",
+				"digital": "",
+				"Cross": "",
+				"Cross2": "",
+				"text":"",
+				"imgs":""
+			}
+		]
+	}
+]
