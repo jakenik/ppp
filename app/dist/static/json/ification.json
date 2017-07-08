@@ -3,35 +3,35 @@
 		"man":"男装分类",
 		"toUrl1":[
 			{
-				"toUrl": "#1",
-				"text":"外套"
+				"toUrl": "/classification5",
+				"text":"鞋子"
 			}, {
-				"toUrl": "#2",
-				"text":"卫衣"
+				"toUrl": "/classification6",
+				"text":"袜子"
 			},
 			{
-				"toUrl": "#3",
-				"text":"针织衣"
+				"toUrl": "/classification8",
+				"text":"居家服"
 			},
 			{
-				"toUrl": "#4",
+				"toUrl": "/classification2",
 				"text":"T恤"
 			},
 			{
-				"toUrl": "#5",
+				"toUrl": "/classification1",
 				"text":"衬衫"
 			},
 			{
-				"toUrl": "#7",
+				"toUrl": "/classification4",
 				"text":"休闲裤"
 			},
 			{
-				"toUrl": "#8",
+				"toUrl": "/classification3",
 				"text":"牛仔裤"
 			},
 			{
-				"toUrl": "#9",
-				"text":"套装"
+				"toUrl": "/classification7",
+				"text":"内裤"
 			}
 		]
 	},
