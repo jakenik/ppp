@@ -12,7 +12,7 @@
 		"imgUrl":"./static/img/slide2.jpg"
 	},
 	{
-		"toUrl":"#4",
+		"toUrl":"/vip",
 		"imgUrl":"https://img.sanfu.com/img/template/201707031520413647.jpg"
 	}
 ]
