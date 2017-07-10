@@ -16,7 +16,7 @@ if($('.top_nav li').hasClass('navCur'))
 	});
 }
 
-//案例切换
+//案例切换loginMain
 $('.demo_left').click(function(){
 	$('.demo_div ul:first').animate({marginLeft:'-1100px'},500,function(){
 		$(this).appendTo('.demo_div');
