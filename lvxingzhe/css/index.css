@@ -494,11 +494,12 @@ body {
   .share {
     margin: 0 auto;
     float: none;
-    width: 77px;
+    width: 90px;
   }
 }
 .jiathis_txt {
   background: none !important;
   overflow: inherit !important;
   margin-left: -13px !important;
+  margin-right: 0 !important;
 }
