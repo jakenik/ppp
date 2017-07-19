@@ -1,7 +1,7 @@
 .bg(@addr,@x,@y,@w,@h){
     background:url("../img/@{addr}") no-repeat @x @y ~"/" @w @h;
 }
-body,header,section,nav,footer,article,div,h1,h2,h3,h4,form,p,dl,dt,dd,ul,li,span,a,em,i,strong,b,img{ margin:0; padding:0; -ms-touch-action: none;/*去除ie默认触屏动作*/ box-sizing: border-box;/*怪异盒子模型*/}
+body,header,section,nav,footer,article,div,h1,h2,h3,h4,form,p,dl,dt,dd,ul,li,span,a,em,i,strong,b,img{ margin:0; padding:0;}
 i,em{ font-style: normal;}
 a{text-decoration: none; color:#656769;}
 body,html,.swiper-container{height: 100%;}
@@ -271,8 +271,9 @@ to {transform:translateX(0px);}
         }
     }
 }
+/*尾部*/
 .tail{
-    position: relative;
+    position: absolute;
     z-index: 8;
     min-height: 58px;
     background: #000;
@@ -380,3 +381,13 @@ to {transform:translateX(0px);}
     overflow: inherit !important;
     margin-left: -13px !important;
 }
+/*about关于我们的css*/
+.about-head-bg{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+}   

@@ -25,10 +25,6 @@ b,
 img {
   margin: 0;
   padding: 0;
-  -ms-touch-action: none;
-  /*去除ie默认触屏动作*/
-  box-sizing: border-box;
-  /*怪异盒子模型*/
 }
 i,
 em {
@@ -36,7 +32,6 @@ em {
 }
 a {
   text-decoration: none;
-  color: #656769;
 }
 body,
 html,
@@ -108,12 +103,14 @@ body {
   position: absolute;
   top: 40px ;
   right: 0px;
+  z-index: 99;
 }
 .logo {
   height: 82px;
   top: 39px;
   position: absolute;
-  z-index: 1;
+  z-index: 4;
+  left: 50px;
 }
 .head-position-div {
   height: 25px;
@@ -146,7 +143,7 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   padding: 10px 0 0 19px;
-  z-index: 2;
+  z-index: 5;
   animation: divtop 1s infinite alternate;
 }
 .mouse img {
@@ -187,7 +184,7 @@ body {
   width: 100%;
   height: 100%;
   display: none;
-  z-index: 4;
+  z-index: 5;
 }
 @media screen and (max-width: 1200px) {
   .font {
@@ -259,7 +256,55 @@ body {
     transform: translateX(0px);
   }
 }
+@-moz-keyframes myframesinit {
+  from {
+    transform: translateX(693px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@-ms-keyframes myframesinit {
+  from {
+    transform: translateX(693px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes myframesinit {
+  from {
+    transform: translateX(693px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
 @keyframes divtop {
+  form {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@-moz-keyframes divtop {
+  form {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@-ms-keyframes divtop {
+  form {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes divtop {
   form {
     transform: translateY(10px);
   }
@@ -393,12 +438,14 @@ body {
 .bussiness-li li img {
   width: auto;
 }
+/*尾部*/
 .tail {
   position: relative;
   z-index: 8;
   min-height: 58px;
   background: #000;
   border-bottom: #0c0c0c 2px solid;
+  bottom: 0;
 }
 .tail-logo {
   margin: 11px 0 0 1.5%;
@@ -503,3 +550,123 @@ body {
   margin-left: -13px !important;
   margin-right: 0 !important;
 }
+/*about关于我们的css*/
+.about-head-bg{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+.about-kong-div{
+	width: 60.5%;
+	margin: 0 auto 0px;
+	position: relative;
+	padding-top: 272px;
+	top: 0;
+	z-index: 4;
+}
+.about-kong-div-ul li{
+	float: left;
+	width: 30%;
+	margin: 0 1.6%;
+	background: rgba(0,0,0,0.6);
+	padding: 14px 12px 18px 12px;
+}
+.about-kong-div-ul li span{
+line-height: 50px;
+font-size: 18px;
+color: #f1f1f1;
+}
+.about-kong-div-ul li p{
+line-height: 41px;
+font-size: 36px;
+color: #f1f1f1;
+font-weight: 600;
+}
+.about-kong-div-ul li i{
+line-height: 20px;
+font-size: 18px;
+color: #f1f1f1;
+white-space: nowrap;
+}
+@media screen and (max-width: 1040px) {
+.about-kong-div {width:75.5%;}
+}
+@media screen and (max-width: 730px) {
+	.about-kong-div {
+	    width: 98.5%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.about-kong-div-ul li span {
+    line-height: 39px;
+    font-size: 16px;
+    color: #f1f1f1;
+	}
+	.about-kong-div-ul li p {
+    line-height: 33px;
+    font-size: 23px;
+    color: #f1f1f1;
+    font-weight: 600;
+	}
+	.about-kong-div-ul li i {
+    line-height: 15px;
+    font-size: 16px;
+    color: #f1f1f1;
+	}
+}
+@media  screen and (max-width:351px ) {
+	.about-kong-div-ul li span {
+    line-height: 39px;
+    font-size: 15px;
+    color: #f1f1f1;
+	}
+	.about-kong-div-ul li p {
+    line-height: 22px;
+    font-size: 18px;
+    color: #f1f1f1;
+    font-weight: 600;
+	}
+	.about-kong-div-ul li i {
+    line-height: 15px;
+    font-size: 12px;
+    color: #f1f1f1;
+	}
+}
+@media  screen and (max-width:375px ) {
+	.about-kong-div{
+		padding-top: 50%;
+	}
+}
+.about-video{
+	padding-top: 21%;position: absolute;top: 0;width: 100%;height: 100%;z-index: 2;left: 0;
+}
+.about-video-em{
+	height: 22%;
+}
+@media  screen and (max-width:414px) {
+	.about-video{
+	padding-top: 25%
+	}
+	.about-video-em{
+	height: 16%;
+	}
+}
+.about-kong-div-ul li a img{
+cursor:pointer;
+transition:all 1s;
+-moz-transition:all 1s;	/* Firefox 4 */
+-webkit-transition:all 1s;	/* Safari 和 Chrome */
+-o-transition:all 1s;	/* Opera */
+}
+.about-kong-div-ul li:hover .aboutimg{
+	transform:rotate(180deg);
+-ms-transform:rotateY(180deg); /* Internet Explorer */
+-moz-transform:rotateY(180deg); /* Firefox */
+-webkit-transform:rotateY(180deg); /* Safari 和 Chrome */
+-o-transform:rotateY(180deg); /* Opera */
+	}
+
