@@ -19,8 +19,6 @@
 		<!--文字默认为邮箱地址-->
 		<!--<meta name="format-detection" content="email=yes">-->
 		<title>旅行者</title>
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -75,15 +73,15 @@
 		<div class="about-kong">
 			<div class="about-kong-div">
 				<ul class="clearFix about-kong-div-ul">
-					<li>
-						<a href=""><img src="img/about-img1.jpg" class="aboutimg"/></a><span>公司简介</span>
-						<p>ABOUT</p><i>voyager one</i></li>
-					<li>
-						<a href=""><img src="img/about-img2.jpg"  class="aboutimg"/></a><span>品牌文化</span>
+					<li class="about-click" link="./json/about1.json?id=1">
+						<a href="javascript:void(0)"><img src="img/about-img1.jpg" class="aboutimg"/></a><span>公司简介</span>
+						<p>ABOUT</p><i class="aboutimg-i">voyager one</i></li>
+					<li class="about-click jslei" link="./json/about2.json?id=2">
+						<a href="javascript:void(0)"><img src="img/about-img2.jpg"  class="aboutimg"/></a><span>品牌文化</span>
 						<p>culture</p><i>of brand</i></li>
-					<li style="position: relative;">
+					<li style="position: relative;" link="http://player.ku6.com/refer/PyeR7gr3V5V9siyjkhvkcA../v.swf">
 						<a href="javascript:void(0)" ><img src="img/about-img3.jpg" class="aboutimg"/>
-							<div class="about-video" link="http://player.ku6.com/refer/PyeR7gr3V5V9siyjkhvkcA../v.swf"><em class="index-middle-div-i about-video-em" ></em></div>
+							<div class="about-video" ><em class="index-middle-div-i about-video-em" ></em></div>
 						</a><span>品牌大片</span>
 						<p>video</p><i>of brand</i></li>
 				</ul>
@@ -98,8 +96,34 @@
 
 			</div>
 		</div>
+		<!--ajax详细结构-->
+		<div class="Details">
+			<div class="Details-div">
+				<p class="Details-xx"><img src="img/xx.jpg"/></p>
+				<div class="Details-div1">
+					<div class="Details-div1-left"><div></div></div>
+					<div class="Details-div1-right"><div></div></div>
+					<img src="" style="display: block;"/>
+					<img src=""/>
+					<img src=""/>
+				</div>
+				<div class="Details-div2">
+					<div class="clearFix">
+						<div class="Details-div2-text1 Detail-color jsDetailsdiv"></div>
+						<div class="Details-div2-text2 jsDetailsdiv"></div>
+					</div>
+					<div class="jsDetailsdiv2"></div>
+					<div class="Details-p-text">
+						<p style="color: #000;font-size: 15px;" class="jsDetailsp"></p>
+						<div class="jsDetailspdiv">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="tail clearFix">
-			<div class="tail-logo"><img src="img/taillogo.png" /></div>
+			<div class="tail-logo"><img src="img/taillogo.png" class="aboutimg-i"/></div>
 			<ul class="tail-ul clearFix">
 				<li>
 					<a href="./index.html">网站首页</a>
@@ -143,6 +167,121 @@
 		</div>
 	</body>
 	<script src="js/jquery-1.7.1.min.js"></script>
+	<!-- 滚动条插件 置于jquery后-->
+	<script src="js/jquery.jscrollpane.min.js"></script>
 	<script src="js/app.js"></script>
-
+<script>
+ $(".about-click").click(function(){
+ 	var _this=$(this);
+ 	var aLink=$(this).attr('link');
+ 	$.ajax({
+ 		type:"get",
+		url:aLink,
+		dataType:'json',
+		success:function(json){
+			$(".Details").fadeIn(500);
+ 			var imgArr=json.imgUrl;
+			var textArr=json.text;
+			for(var i=0; i<imgArr.length;i++){
+				$(".Details-div1 img").eq(i).attr({src:imgArr[i]})
+			}
+			if(_this.is('.jslei')==false){
+				$(".jsDetailsdiv2").text("")
+				for(var k=0;k<textArr.length;k++){
+					$(".jsDetailsdiv").eq(k).text(textArr[k].title)
+				}
+			}
+			else{
+				$('.jsDetailsdiv').text("")
+				for(var k=0;k<textArr.length;k++){
+					
+					$(".jsDetailsdiv2").eq(k).text(textArr[k].title)
+				}
+			}
+			$(".jsDetailsp").text(textArr[0].tag)
+			$(".jsDetailspdiv").append(textArr[0].content)
+			$('.Details-div2-text1').click(function(){
+				$('.Details-div2-text1').addClass("Detail-color");
+				$('.Details-div2-text2').removeClass("Detail-color");
+				$(".jsDetailsp").text(textArr[0].tag);
+				$(".jsDetailspdiv").empty();
+				$(".jsDetailspdiv").append(textArr[0].content);
+			})
+			$('.Details-div2-text2').click(function(){
+				$('.Details-div2-text2').addClass("Detail-color");
+				$('.Details-div2-text1').removeClass("Detail-color");
+				$(".jsDetailsp").text(textArr[1].tag);
+				$(".jsDetailspdiv").empty();
+				$(".jsDetailspdiv").append(textArr[1].content);
+			})
+ 		},
+		error:function(status){
+			alert("请求繁忙，请稍后重试！");
+		}
+ 	});
+ })
+ var Thisjson={
+ index:null,
+ init:function(){
+ 	var _this=this;
+		 $(".Details-div1-right").click(function(){
+		 	for(var i=0; i<$(".Details-div1 img").length;i++){
+		 		if($(".Details-div1 img").eq(i).css('display')=="block"){
+		 			_this.index=i;
+		 			$(".Details-div1 img").eq(_this.index).fadeOut(200);		 			
+		 		}
+		 	}
+		 	
+		 	if(_this.index<$(".Details-div1 img").length){
+		 		++_this.index
+		 		$(".Details-div1 img").eq(_this.index).fadeIn(200);
+		 	}
+		 	
+		 	if(_this.index==$(".Details-div1 img").length){
+		 		$(".Details-div1 img").eq(0).fadeIn(200);
+		 	}
+		 })
+		 $(".Details-div1-left").click(function(){
+		 	for(var i=0; i<$(".Details-div1 img").length;i++){
+		 		if($(".Details-div1 img").eq(i).css('display')=="block"){
+		 			_this.index=i;
+		 			$(".Details-div1 img").eq(_this.index).fadeOut(200);		 			
+		 		}
+		 	}
+		 	if(_this.index==0){
+		 		$(".Details-div1 img").eq($(".Details-div1 img").length-1).fadeIn(200);
+		 	}
+		 	if(_this.index>0){
+		 		--_this.index
+		 		$(".Details-div1 img").eq(_this.index).fadeIn(200);
+		 	}
+		 })
+		 var resize=function (){
+			 	var windowwidth=$(window).width();
+			 	var windowheight=$(window).height();
+			 	$(".Details-div").width((windowwidth*0.6)+"px")
+			 	
+			 	$('.Details-div1').width(windowwidth*0.2083333333333333+"px")
+			 	var divwidth=$(".Details-div").width();
+			 	$(".Details-div").css({marginLeft: -(divwidth/2)+"px"})
+			 	var divwidth2=$('.Details-div1').width();
+				$('.Details-div1').height(divwidth2+"px")
+			 	if(windowwidth<581){
+			 		$(".Details-div2").width(windowwidth*0.6+"px")
+			 	}
+			 	else{
+				 	$(".Details-div2").width(windowwidth*0.3375+"px")
+			 	}
+		 	}
+		 resize()
+		 $(window).resize(function(){
+		 	resize()
+		 })
+		 $(".Details-xx").click(function(){
+		 	$(".Details").fadeOut(500);
+		 })
+ 	}	
+}
+Thisjson.init();
+</script>
 </html>
