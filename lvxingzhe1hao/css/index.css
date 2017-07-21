@@ -133,6 +133,9 @@ body {
   float: left;
   padding-top: 6px;
 }
+.head-ul li  a{
+  color: #3042d0;
+}
 .mouse {
     width: 37px;
     height: 43px;
@@ -847,6 +850,9 @@ transition:all 1s;
     margin: 0px auto;
     float: none;
  }
+ .Details-div1-right,.Details-div1-left {
+ 	height: 24px;
+ }
  .jsDetailsdiv2 {
     font-size: 20px;
     line-height: 50px;
@@ -882,8 +888,17 @@ transition:all 1s;
     top: -43px;
 	}
 }
-@media  screen and (max-width:375px) {
+@media  screen and (max-width:414px) {
 	.Details-xx {
     left: 0;
+	}
+	.Details-div1{
+		width: 110px;
+		height: 110px;
+		margin-bottom:3px ;
+	}
+	.Details-div {
+    left: 0%;
+    margin-left: 0%;
 	}
 }

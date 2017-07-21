@@ -26,7 +26,7 @@
 		var videowidth=$(".fixed-video-main").width();
 		var videoheight=$(".fixed-video-main").height();
 		$(".fixed-video-main").css({marginTop:-(videoheight/2)+"px"})
-		$(".fixed-video-main").css({marginLeft:-(videowidth/2)+"px"})
+		$(".fixed-video-main").css({marginLeft:-(videowidth/1.5)+"px"})
 	};
 	size();	
 	$(window).resize(function(){//屏幕变化时候触发
