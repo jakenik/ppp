@@ -880,7 +880,7 @@ transition:all 1s;
 }
 @media  screen and (max-width:581px ) {
 	.Details-p-text {
-    height: 215px;
+    height: 200px;
 	}
 	.Details-xx {
     width: 40px;
