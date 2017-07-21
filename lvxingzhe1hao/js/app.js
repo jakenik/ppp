@@ -4,6 +4,7 @@
 	function size(){
 		var windowwidth=$(window).width();
 		var height=$(window).height();
+		
 		var winwidth1=$(window).width();
 		var num1=-(width-winwidth1)/2.5;
 		$(".head").css({height:height})
@@ -27,6 +28,7 @@
 		var videoheight=$(".fixed-video-main").height();
 		$(".fixed-video-main").css({marginTop:-(videoheight/2)+"px"})
 		$(".fixed-video-main").css({marginLeft:-(videowidth/1.75)+"px"})
+		$(".cloth").height($("body").outerHeight())
 	};
 	size();	
 	$(window).resize(function(){//屏幕变化时候触发

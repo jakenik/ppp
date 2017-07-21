@@ -36,7 +36,7 @@ a {
 body,
 html,
 .swiper-container {
-  height: 100%;
+  height: auto;
 }
 input,
 textarea,
@@ -188,6 +188,9 @@ body {
   height: 100%;
   display: none;
   z-index: 33;
+  left: 0;
+  top: 0;
+  overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
   .font {
@@ -449,6 +452,7 @@ body {
   background: #000;
   border-bottom: #0c0c0c 2px solid;
   bottom: 0;
+  width: 100%;
 }
 .tail-logo {
   margin: 11px 0 0 1.5%;
@@ -900,5 +904,259 @@ transition:all 1s;
 	.Details-div {
     left: 0%;
     margin-left: 0%;
+	}
+}
+/*第三页*/
+.Information{
+	background: url(../img/Information.jpg) no-repeat;
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.Information-head,.Information-body{
+	width: 73.69%;
+	position: relative;
+	margin: 0 auto;
+}
+.Information-body{
+	height: auto;
+	padding-bottom: 70px;
+}
+@media  screen and (max-width:1285px ) {
+	.Information-head,.Information-body{
+		width: 100%;
+	}
+	.Information{
+	background-position-x: -500px;
+	}
+}
+@media  screen and (max-width:768px ) {
+	.Information{
+	background-position-x: -890px
+	}
+}
+@media  screen and (max-width:414px ) {
+	.Information{
+	    background-position-x: -1098px;
+	}
+}
+.Information-body-div {
+    width: 250px;
+    margin-top: -95px;
+    float: left;
+}
+.Information-body-div-text{
+	background: #ececec;
+	height: 128px;
+	padding-left: 25px;
+}
+.Information-body-div-text li{
+	font-size: 14px;
+	color: #666666;
+	padding-top: 30px;
+}
+.Information-bodytext{
+	float: left;
+	width: 70%;
+}
+.Information-bodytext-div{
+	position: relative;
+	margin: 0 auto;
+	height: 84px;
+	border-bottom: 1px #e5e5e5 solid;
+	width: 90%;
+}
+.Information-bodytext-div-hadetext{
+	position: absolute;
+	right: 0;
+	width: 185px;
+	top:47px;
+}
+.Information-bodytext-div-hadetext span a{
+	line-height: 22px;
+	font-size: 14px;
+	color: #767676;
+}
+.Information-bodytext-div-hadetext span{
+	line-height: 22px;
+	font-size: 14px;
+	color: #000;
+}
+.Information-bodytext-ul{
+	padding: 128px 0 0 50px;
+}
+.Information-bodytext-ul li{
+	padding-bottom: 42px;
+}
+.Information-bodytext-ul li div{
+	float: left;
+}
+.Information-bodytext-ul-div1{
+	width: 40%;
+}
+.Information-bodytext-ul-div2{
+	width: 55%;
+	margin-left: 5%;
+}
+.Information-bodytext-ul-div2-p1{
+	font-size: 14px;
+	color: #555d82;
+	line-height: 25px;
+}
+.Information-bodytext-ul-div2-index{
+	margin-top: 12px;
+	width: 79px;
+	height: 23px;
+	font-size: 14px;
+	border: 1px solid #000000;
+	text-align: center;
+	line-height: 23px;
+}
+.Information-bodytext-ul-div2-index2{
+	margin-top: 12px;
+	width: 25px;
+	height: 23px;
+	font-size: 14px;
+	line-height: 23px;
+	border: 1px solid #000000;
+	text-align: center;
+}
+@media  screen and (max-width:850px ) {
+	.Information-body-div{
+		width: 30%;
+		margin-top: 0;
+	}
+}
+@media  screen and (max-width:650px ) {
+	.Information-bodytext-ul-div1,.Information-bodytext-ul-div2{
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+}
+.Information-body-div-text-div{
+	margin-top: 14px;cursor: pointer;
+}
+@media  screen and (max-width:414px ) {
+	.Information-body{
+		/*height: auto;*/
+	}
+	.Information-bodytext {
+    width: 100%;
+    float: none;
+	}
+	.Information-body-div-text{
+		padding-left: 0;
+	}
+	.Information-body-div-text-div{
+	margin-top:0px;
+	}
+	.Information-body-div-text li{
+		text-align: center;
+	}
+	.Information-body-div {
+    width: 100%;
+    margin-top: 0;
+    float: none;
+	}
+	.Information-bodytext-ul{
+		padding-left: 0;
+		/*position: relative;*/
+	}
+}
+.Information-bodytext-tail{
+	height: 27px;
+	margin: 0 auto;
+	width: 30%;
+}
+.Information-bodytext-tail div{
+	float: left;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #e7e4e2;
+	background: #fff;
+	font-size: 14px;
+	line-height: 25px;
+	margin-right: 3px;
+	text-align: center;
+	cursor: pointer;
+}
+@media  screen and (max-width:760px ) {
+	.Information-bodytext-tail{
+	width: 50%;
+	}
+}
+@media  screen and (max-width:434px ) {
+	.Information-bodytext-tail{
+	width: 70%;
+	}
+}
+.BrandDynamics-bodytext-ul{
+	padding-top: 107px;
+}
+.BrandDynamics-bodytext-ul li{
+	padding-top: 22px;
+	padding-bottom: 11px;
+	border-bottom: 1px solid #d1d1d1;
+}
+.BrandDynamics-bodytext-ul-div1{
+	width: 76px;
+	height: 74px;
+	background: #f9f9f9;
+	padding: 17px 0 0 14px;
+	float: left;
+}
+.BrandDynamics-bodytext-ul-div1-p1{
+	font-size: 60px;
+	color: #6e6e6e;
+	font-weight: 500;
+	line-height: 43px;
+}
+.BrandDynamics-bodytext-ul-div1-p2{
+	font-size: 14px;
+	color: #a6a6a6;
+	line-height: 27px;
+}
+.BrandDynamics-bodytext-ul-div2 {
+    margin-left: 2%;
+    width: 80%;
+    float: left;
+}
+.texta{
+	line-height: 20px;
+	font-size: 18px;
+	color: #444444;
+}
+.textb{
+	margin-top: 4px;
+	line-height: 22px;
+	color: #8f8e8e;
+}
+.textc{
+	margin-top: 6px;
+	line-height: 24px;
+	color: #8f8e8e;
+}
+.BrandDynamics-bodytext-ul-div1-color{
+	background: #000;
+}
+.BrandDynamics-bodytext-ul-div1-color p{
+	color: #fff;
+}
+@media  screen and (max-width:810px ) {
+	.BrandDynamics-bodytext-ul-div1 {
+		float: none;
+    margin: 0 auto;
+	}
+	.BrandDynamics-bodytext-ul-div2 {
+    margin: 0 auto;
+    width: 80%;
+   	float: none;
+   	text-align: center;
+	}
+}
+@media  screen and (max-width:415px ) {
+	.Information-bodytext-div {
+		height: auto;
 	}
 }
