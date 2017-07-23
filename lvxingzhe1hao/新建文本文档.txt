@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>关于我们</title>
+		<!--meta文档类型声明-->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--禁止缩放比例为一的meta-->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<!--去除苹果工具栏和菜单栏-->
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+		<!--显示手机信号、时间、电池的顶部导航栏的颜色default（白色），可以定为black（黑色）和black-translucent（灰色半透明）-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!--format-detection翻译成中文的意思是“格式检测”，telephone去掉这个拨号链接iPhone，默认yes-->
+		<!--<meta name="format-detection" content="telephone=yes">-->
+		<!--文字默认为邮箱地址-->
+		<!--<meta name="format-detection" content="email=yes">-->
+		<title>旅行者</title>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--[if lt IE 9]>
+	    <script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="cloth"></div>
+		<div class="about-head">
+			<div class="Brandworld">
+				<div class="logo">
+					<img src="img/logo.png" />
+				</div>
+				<div class=" head-position">
+					<div class="position-div">
+						<ul class="clearFix head-ul">
+							<li>
+								<a href="./index.html">首页</a>
+							</li>
+							<li>
+								<a href="./about.html">关于我们</a>
+							</li>
+							<li>
+								<a href="./Information.html">一号咨询</a>
+							</li>
+							<li>
+								<a href="./Brandworld.html">品牌世界</a>
+							</li>
+							<li>
+								<a href="">产品中心</a>
+							</li>
+							<li>
+								<a href="">招商加盟</a>
+							</li>
+							<li>
+								<a href="">联系我们</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="head-position-div"></div>
+				</div>
+				<div class="Brandworld-body">
+					<div class="Brandworld-body-div clearFix">
+						<div  data-class="*">全部品牌 </div>
+						<div data-class=".js-clothes">服装</div>
+						<div data-class=".js-shoes">鞋类</div>
+						<div data-class=".js-pack">背包</div>
+						<div data-class=".js-fold">折叠系列</div>
+						<div data-class=".js-camping">露营装备</div>
+						<div data-class=".js-cooker">户外炊具</div>
+						<div data-class=".js-lighting">户外照明</div>
+						<div data-class=".js-outfit">旅行用品</div>
+						<div data-class=".js-tools">户外工具</div>
+						<div data-class=".js-selfDriving">自驾安全</div>
+						<div data-class=".js-device">如乐设备</div>
+						<div data-class=".js-technology">科技产品</div>
+					</div>
+					<div class="Brandworld-body-div2">
+						<ul class="clearFix js-brandLink js-b-ul">
+		                	<li class="js-device" link="json/brand.json?id=1">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                	<li class="js-clothes" link="json/brand.json?id=2">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家</span>
+		                    </li>
+		                    <li class="js-shoes" link="json/brand.json?id=3">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-clothes" link="json/brand.json?id=4">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-selfDriving" link="json/brand.json?id=5">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-cooker" link="json/brand.json?id=6">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-lighting" link="json/brand.json?id=7">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-tools" link="json/brand.json?id=8">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-fold" link="json/brand.json?id=9">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-shoes" link="json/brand.json?id=10">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-pack" link="json/brand.json?id=11">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-outfit" link="json/brand.json?id=12">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-fold" link="json/brand.json?id=13">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-device" link="json/brand.json?id=14">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-technology" link="json/brand.json?id=15">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-shoes" link="json/brand.json?id=16">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-selfDriving" link="json/brand.json?id=17">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-camping" link="json/brand.json?id=18">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-tools" link="json/brand.json?id=19">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-lighting" link="json/brand.json?id=20">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-pack" link="json/brand.json?id=21">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-camping" link="json/brand.json?id=22">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-cooker" link="json/brand.json?id=23">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-outfit" link="json/brand.json?id=24">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-technology" link="json/brand.json?id=25">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-shoes" link="json/brand.json?id=16">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-selfDriving" link="json/brand.json?id=17">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-camping" link="json/brand.json?id=18">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-tools" link="json/brand.json?id=19">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-lighting" link="json/brand.json?id=20">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-pack" link="json/brand.json?id=21">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-camping" link="json/brand.json?id=22">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-cooker" link="json/brand.json?id=23">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-outfit" link="json/brand.json?id=24">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-technology" link="json/brand.json?id=25">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-shoes" link="json/brand.json?id=16">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-selfDriving" link="json/brand.json?id=17">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-camping" link="json/brand.json?id=18">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-tools" link="json/brand.json?id=19">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-lighting" link="json/brand.json?id=20">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-pack" link="json/brand.json?id=21">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-camping" link="json/brand.json?id=22">
+		                    	<img src="img/brand-03.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-cooker" link="json/brand.json?id=23">
+		                    	<img src="img/brand-02.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-outfit" link="json/brand.json?id=24">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+		                    <li class="js-technology" link="json/brand.json?id=25">
+		                    	<img src="img/brand-01.jpg" />
+		                        <span>美骆世家<i></i></span>
+		                    </li>
+                		</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<!--尾部-->
+		<div class="tail clearFix">
+			<div class="tail-logo"><img src="img/taillogo.png" class="aboutimg-i" /></div>
+			<ul class="tail-ul clearFix">
+				<li>
+					<a href="./index.html">网站首页</a>
+				</li>
+				<li>
+					<a href="">集团官网</a>
+				</li>
+				<li>
+					<a href="">我们的故事</a>
+				</li>
+				<li>
+					<a href="./about.html">关于我们</a>
+				</li>
+				<li>
+					<a href="">帮助&常见问题</a>
+				</li>
+			</ul>
+			<div class="phone clearFix">
+				<p class="phone-p"><img src="img/phonp.png" /></p>
+				<div class="phone-div-text">
+					<span style="float: none;">热线电话</span>
+					<span>400-1234 5678  </span><i>&nbsp;&nbsp;周一至周五&nbsp;&nbsp;</i><em>8:00-18:00</em>
+				</div>
+			</div>
+			<div class="share clearFix">
+				<div>
+					<a href="http://service.weibo.com/share/share.php?appkey=&title=&url=&pic=&searchPic=false&style=simple" target="_blank"><img src="img/weibo.png" /></a>
+				</div>
+				<div>
+					<!-- JiaThis Button BEGIN -->
+					<div id="ckepop">
+						<!--<span class="jiathis_txt">分享到：</span>-->
+						<a class="jiathis_button_weixin"><img src="img/weixing.png" /></a>
+						<!--<a href="http://www.jiathis.com/share"  class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>-->
+						<!--<a class="jiathis_counter_style"></a>-->
+					</div>
+					<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
+				</div>
+				<!-- JiaThis Button END -->
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js">
+	</script>
+	<!-- 滚动条插件 置于jquery后-->
+	<script src="js/jquery.jscrollpane.min.js"></script>
+
+	<!-- 排序插件 置于jquery后-->
+	<script src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/app.js">
+	</script>
+	<script type="text/javascript">
+	$('.js-b-ul').isotope({
+    itemSelector: '.js-b-ul li'
+	});
+	$('.Brandworld-body-div div').click(function(){
+	    $(this).addClass('current').siblings('.current').removeClass('current');
+	    var dataValue=$(this).data('class');
+	    //console.log(dataValue);
+	    $('.js-b-ul').css({marginTop:0});
+	    $('.js-b-ul').isotope({
+	        itemSelector: '.js-b-ul li',
+	        filter:dataValue
+	    });
+	});
+		//对应产品数据ajax
+$('body').on('click','.js-brandLink  li',function(){
+    var url=$(this).attr('link');
+    $.ajax({
+        type:"get",
+        url:url,
+        dataType:'json',
+        success:function(json){
+            $('.fixed-brand-l').html("<img src='"+json.imgUrl+"' />");
+            $('.fixed-brand-r').html(json.info);
+            $('.fixed-brand').show().animate({top:"0"},600);
+        },
+        error:function(status){
+            alert("请求繁忙，请稍后重试！");
+        }
+    });
+});
+	</script>
+
+</html>
