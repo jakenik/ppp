@@ -954,6 +954,14 @@ transition:all 1s;
 	font-size: 14px;
 	color: #666666;
 	padding-top: 30px;
+	border-bottom: 1px solid #999999;
+}
+
+.Informationa1,.Informationa2{
+	color:#666666;
+}
+.Information-body-div-text-color{
+	color: #000;
 }
 .Information-bodytext{
 	float: left;
@@ -1011,6 +1019,9 @@ transition:all 1s;
 	border: 1px solid #000000;
 	text-align: center;
 	line-height: 23px;
+}
+.Information-bodytext-ul-div2-index a{
+	display: block;
 }
 .Information-bodytext-ul-div2-index2{
 	margin-top: 12px;
@@ -1159,4 +1170,336 @@ transition:all 1s;
 	.Information-bodytext-div {
 		height: auto;
 	}
+}
+.detailed-h3{
+	margin: 0 auto;
+	color: #000;
+	font-size: 18px;
+	text-align: center;
+	line-height: 30px;
+	width: 50%;
+}
+.detailed-p{
+	color: #000;
+	font-size: 14px;
+	line-height: 36px;
+	
+}
+.detailed-img{
+	margin-top: 36px;
+	text-align: center;
+}
+.detailed-img img{
+	margin-left: 3px;
+	height: 227px;
+	width: auto;
+}
+.detailed-h4{
+	margin-top: 40px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.detailed-text{
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
+	margin-top: 3px;
+}
+.detailed-bodytext-ul{
+ padding-top: 36px;
+}
+@media screen and (max-width: 414px) {
+	.detailed-bodytext-ul{
+ 	padding-top:86px;
+	}
+	.detailed-h3{
+		width: 80%;
+	}
+}
+@media  screen and (max-width:375px ) {
+	.detailed-img img {
+    margin-left: 0px;
+    width: 100%;
+    height: auto;
+	}
+	.jiathis_weixin_modal{
+		width: 100% !important;
+		height: auto !important;
+		left: 0 !important;
+		margin-left: 0 !important; 
+	}
+}
+/*品牌世界页面*/
+.Brandworld{
+	height: 1000px;
+	background: url("../img/Brandworld.jpg")no-repeat;
+}
+.Brandworld-body{
+	width: 1222px;
+	margin: 0 auto;
+	padding-top: 204px;
+	height: 597px;
+}
+.Brandworld-body-div{
+	width: 987px;
+	margin: 0 auto;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding-bottom: 18px;
+	height: 32px;
+	white-space: nowrap;
+}
+.Brandworld-body-div div{
+	padding-left: 6px;
+	width: 65px;
+	line-height: 32px;
+	display: inline-block;
+	font-size: 14px;
+	color: #f5f5f5;
+	height: 32px;
+	vertical-align: top;
+	text-align: center;
+}
+.Brandworld-body-div2{
+	margin-top: 29px;
+	width: 100%;
+	height: 472px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.brand-listM{ width:100%;padding:20px 20px 20px; margin-left:-20px; height:auto; overflow:hidden; height:450px;}
+.brand-list{ width:105%;}
+.Brandworld-body-div2 li{ float:left; margin:0 6px 6px 0; _display:inline; position:relative; z-index:6; width:235px; height:146px;}
+.Brandworld-body-div2 img{ position:absolute; left:0; top:0; width:100%; height:100%;}
+.Brandworld-body-div2 span{ display:none; position:absolute; left:0; bottom:0; z-index:6; width:100%; line-height:34px; text-indent:15px; background:#202020; color:#fff;}
+.Brandworld-body-div2 i{ position:absolute; right:5px; top:5px; width:24px; height:24px; background:url(../images/brand-icon.png) no-repeat 0 -49px;}
+.Brandworld-body-div2 li:hover{ z-index:99;}
+.Brandworld-body-div2 li:hover span{ display:block;}
+.Brandworld-body-div2 li:hover img{width:115%;height:auto; margin:-4.5% 0 0 -8%; box-shadow:0px 0px 15px #000;}
+@media  screen and (max-width:1221px ) {
+	.Brandworld-body-div2 ul {
+    width: 968px;margin: 0 auto;
+	}
+	.Brandworld-body {
+    width: 977px;
+	}
+}
+@media only screen and (max-width:998px ) {
+	.Brandworld-body-div2 ul {
+	    width: 728px;
+	}
+	.Brandworld-body-div {
+    width: 685px;
+	}
+	.Brandworld-body {
+    width: 734px;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.Brandworld-body-div2 ul {
+	    width: 484px;
+	}
+	.Brandworld-body-div {
+    width: 458px;
+	}
+	.Brandworld-body {
+    width: 493px;
+	}
+}
+@media  screen and (max-width: 500px) {
+	.Brandworld-body-div2 ul {
+	    width: 238px;
+	}
+	.Brandworld-body-div {
+    width: 201px;
+	}
+	.Brandworld-body {
+    width: 252px;
+	}
+}
+@media  screen and (max-width:414px) {
+	.Brandworld-body-div2 {
+    height: 100%;
+	}
+}
+.current{ background-color:#8c8c8c; color:#fff;}
+
+
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property:    -moz-transform, opacity;
+    -ms-transition-property:     -ms-transform, opacity;
+    -o-transition-property:      -o-transform, opacity;
+    transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/****滚动插件***/
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 9px;
+	height: 100%;
+	/*background: red;*/
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 12px;
+	padding:1px 0px;
+	background: #6e1515;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	/*background: #6e1515;*/
+	position: relative;
+	background:url(../images/bar-line.gif) repeat-y;
+}
+
+.jspDrag
+{
+	background: #000;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 9px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 9px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
 }

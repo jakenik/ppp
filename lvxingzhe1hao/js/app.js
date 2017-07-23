@@ -28,7 +28,8 @@
 		var videoheight=$(".fixed-video-main").height();
 		$(".fixed-video-main").css({marginTop:-(videoheight/2)+"px"})
 		$(".fixed-video-main").css({marginLeft:-(videowidth/1.75)+"px"})
-		$(".cloth").height($("body").outerHeight())
+		$(".cloth").height($("body").outerHeight())	
+		
 	};
 	size();	
 	$(window).resize(function(){//屏幕变化时候触发
