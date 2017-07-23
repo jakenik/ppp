@@ -29,7 +29,8 @@
 		$(".fixed-video-main").css({marginTop:-(videoheight/2)+"px"})
 		$(".fixed-video-main").css({marginLeft:-(videowidth/1.75)+"px"})
 		$(".cloth").height($("body").outerHeight())	
-		
+		//品牌世界弹窗
+		$('.Brandworld-Box').height($('.Brandworld').height())	
 	};
 	size();	
 	$(window).resize(function(){//屏幕变化时候触发
