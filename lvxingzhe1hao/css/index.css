@@ -1431,6 +1431,246 @@ transition:all 1s;
 	from{transform: translateY(0%);}
 	to{transform: translateY(107%);}
 }
+
+
+/*产品中心*/
+.Productcenter{
+	background: #040404;
+	height: 890px;
+	
+}
+.Productcenter-body{
+	width: 96%;
+	margin: 0 auto;
+	padding-top: 170px;
+}
+.Productcenter-body-div{
+	float: left;
+	height: 100%;
+	width: 11.235%;
+	border: 1px #333 solid;
+	min-width: 102px;
+}
+.Productcenter-body-div div {
+    display: block;
+    height: 53px;
+    line-height: 53px;
+    padding-left: 22px;
+    color: #999;
+    border-bottom: #333 1px solid;
+}
+.product-nav .current, .product-nav div:hover {
+    background: #171717 url(../img/arrow.png) right -195px no-repeat;
+}
+.Productcenter-body-div2{
+	position: relative;
+	float: left;
+	width: 88.6%;
+	overflow: hidden;
+}
+.Productcenter-body-div2-div{
+	margin: 0px auto;
+	width: 1466px;
+	height: 479px;
+	overflow-y: auto;
+	margin-top: 30px;
+}
+.Productcenter-body-div2 li{
+	width: 235px;
+	height: 148px;
+	margin: 3px;
+	float: left;
+	position: relative ;
+	overflow: hidden;
+}
+.Productcenter-body-div2 span {
+    /*display: none;*/
+    position: absolute;
+    left: 0;
+    bottom: -23%;
+    z-index: 6;
+    width: 100%;
+    line-height: 34px;
+    text-indent: 15px;
+    background: #202020;
+    color: #fff;
+}
+@media only screen and (max-width: 1888px) {
+	.Productcenter-body-div2-div{
+		width: 1225px;
+	}
+}
+@media only screen and (max-width: 1581px) {
+	.Productcenter-body-div2-div{
+		width: 983px;
+	}
+}
+@media only screen and (max-width:1272px ) {
+	.Productcenter-body-div2-div{
+		width: 743px;
+	}
+	.Productcenter-body-div2{
+	width:87.6% ;}
+}
+@media only screen and (max-width:967px ) {
+	.Productcenter-body-div2-div{
+		width: 500px;
+	}
+}
+@media only screen and (max-width:891px ) {
+	.Productcenter-body-div2-div{
+		width: 259px;
+	}
+	.Productcenter-body-div2 {
+    width: 80.6%;
+	}
+}
+@media only screen and (max-width:575px ) {
+	.Productcenter-body-div2 {
+    width: 70.6%;
+	}
+}
+@media only screen and (max-width:414px ) {
+	.Productcenter-body-div2 {
+   margin: 0 auto;
+	}
+}
+@media only screen and (max-width:387px ) {
+	.Productcenter-body{
+		width: 100%;
+	}
+	.Productcenter-body-div2-div ul,.Productcenter-body-div2-div li,.Productcenter-body-div2-div img,.Productcenter-body-div2-div{
+		width: 100%;
+	}
+}
+.Productcenter-body-div2-cloth{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background: #000;
+	bottom: -100%;
+}
+/*弹框*/
+.Productcenter-Box{
+	position: absolute;
+	right: 0;
+	width: 87%;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+	display: none;
+	overflow: hidden;
+}
+.Productcenter-Box-left,.Productcenter-Box-right{
+	background: rgba(0,0,0,0.6);
+	width: 49.9%;
+	height: 100%;
+	position: relative;
+	z-index: 5;
+}
+.Productcenter-Box-left{
+	float: left;
+}
+.Productcenter-Box-right{
+	float: right;
+}
+.Productcenter-Box a{
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    width: 38px;
+    height: 62px;
+    background: url(../img/bussiness-icon.png) no-repeat;
+    z-index: 4;
+    overflow: hidden;
+    text-indent: -99em;
+}
+.Productcenter-Box-img{
+	position: absolute;
+	top: 0;
+	z-index: 4;
+	left: 50%;
+	height: 900px;
+	width: auto;
+}
+.Productcenter-Box-img-hidden{
+	width:4000px;
+}
+.Productcenter-Box-img img{
+	display: inline-block;
+	height: 900px;
+	width: auto;
+}
+.Productcenter-Box-right-a{
+	left: 0;
+	background-position-y:-299px !important;
+}
+.Productcenter-Box-left-a{
+	right: 0;
+	background-position-y:-104px !important;
+}
+@media only screen and (max-width:1470px ) {
+	.Productcenter-Box-img-hidden img{
+     height: 100%;
+	}
+	.Productcenter-Box-img-hidden {
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    margin-top: -350px;
+	}
+}
+@media only screen and (max-width:1170px ) {
+	.Productcenter-Box-img-hidden {
+    height: 500px;
+    margin-top: -250px;
+	}
+}
+@media only screen and (max-width:910px ) {
+	.Productcenter-Box-img-hidden {
+    height: 300px;
+    margin-top: -150px;
+	}
+}
+@media only screen and (max-width:1058px ) {
+	.Productcenter-Box{
+    width: 80%;
+	}
+}
+@media only screen and (max-width:608px ) {
+	.Productcenter-Box-img-hidden {
+    height: 150px;
+    margin-top: -75px;
+	}
+	.Productcenter-Box {
+    width: 70%;
+    height: 680px;
+    top: 50%;
+    margin-top: -330px;
+	}
+	.Productcenter-Box-img{
+		height: 680px;
+		margin-top: -330px;
+		top: 50%;
+	}
+}
+@media only screen and (max-width:320px ) {
+	.Productcenter-Box-img-hidden {
+    height: 100px;
+    margin-top: -50px;
+	}
+	.Productcenter-Box {
+    width: 64%;
+	}
+}
+      
+    
+
+
+
+
 /* Start: Recommended Isotope styles */
 
 /**** Isotope Filtering ****/

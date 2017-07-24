@@ -115,3 +115,170 @@ var josn={
 	}
 }
 josn.init();
+
+//产品中心
+var Productcenterresize=function (){
+//		$(".Productcenter").height($(window).height())
+		if($(window).width()<371){
+			$(".Productcenter-body-div2").width(($(window).width()-$(".Productcenter-body-div").width())-2+"px");
+			$('.Productcenter-body-div2-div').height($('.Productcenter-body-div').height()+"px")
+			$('.Productcenter-body-div2-div').css({marginTop:"0px"})
+		}
+		else{
+			$(".Productcenter-body-div2").removeAttr("style");
+			$('.Productcenter-body-div2-div').height($('.Productcenter-body-div').height()-30+"px")
+			$('.Productcenter-body-div2-div').css({marginTop:"30px"})
+		}
+	}
+	Productcenterresize();
+	$(window).resize(function(){//屏幕变化时候触发
+		Productcenterresize();
+		Productcenterjson.width();
+		var width=($('.Productcenter-Box').width()-$('.Productcenter-Box-img').width())/2;
+		$('.Productcenter-Box-left').css({width:width+"px"});$('.Productcenter-Box-right').css({width:width+"px"});
+	})
+	$('.Productcenter-body-div2 li').on("mouseover touchstart",function(){
+		$(this).find('span').stop();
+		$(this).find('span').animate({bottom:"0%"})
+	})
+	$('.Productcenter-body-div2 li').on("mouseout touchend",function(){
+		$(this).find('span').stop();
+		$(this).find('span').animate({bottom:"-23%"})
+	})
+	var Productcenterjson={
+		num:null,
+		numwidth:null,
+		src:0,
+		click:function(){//左右切换
+			var _this=this;
+			$('.Productcenter-Box-right-a').click(function(){//右边
+				var current=$('.positionjs').width();//当前
+				for (var i=0;i<$('.Productcenter-Box-img-hidden img').length;i++){
+					if($('.Productcenter-Box-img-hidden img').eq(i).is(".positionjs")==true){
+						if(_this.src<$('.Productcenter-Box-img-hidden img').length-1){
+							_this.src=i+1;
+//							console.log(_this.src,$('.Productcenter-Box-img-hidden img').length)
+						$('.Productcenter-Box-img-hidden img').eq(_this.src).addClass('positionjs');
+						}
+						else{
+							_this.src=0;
+							$('.Productcenter-Box-img-hidden img').eq(_this.src).addClass('positionjs');
+						}
+						$('.Productcenter-Box-img-hidden img').eq(i).removeClass('positionjs');
+						break;
+					}
+				}
+				var width=($('.Productcenter-Box').width()-$('.positionjs').width())/2;
+				if(_this.src==0){
+					_this.numwidth=0;	
+				}
+				else{
+					_this.numwidth=_this.numwidth+current;
+				}
+				$('.Productcenter-Box-img-hidden').animate({marginLeft:-_this.numwidth+"px"});
+				$('.Productcenter-Box-img').width($('.positionjs').width());
+				$('.Productcenter-Box-img').css({marginLeft:-$('.Productcenter-Box-img').width()/2+"px"});
+				$('.Productcenter-Box-left').animate({width:width+"px"});$('.Productcenter-Box-right').animate({width:width+"px"});
+				
+			});
+			$('.Productcenter-Box-left-a').click(function(){//左边
+				var current=$('.positionjs').width();//当前
+				for (var i=0;i<$('.Productcenter-Box-img-hidden img').length;i++){
+					if($('.Productcenter-Box-img-hidden img').eq(i).is(".positionjs")==true){
+						if(_this.src>0){
+							_this.src=i-1;
+						$('.Productcenter-Box-img-hidden img').eq(_this.src).addClass('positionjs');
+						}
+						else{
+							_this.src=$('.Productcenter-Box-img-hidden img').length-1;
+							$('.Productcenter-Box-img-hidden img').eq(_this.src).addClass('positionjs');
+						}
+						$('.Productcenter-Box-img-hidden img').eq(i).removeClass('positionjs');
+						break;
+					}
+				}
+				if(_this.src!=$('.Productcenter-Box-img-hidden img').length-1){	
+					_this.numwidth=_this.numwidth-$('.positionjs').width();
+				}
+				else{
+					for(var i=0; i<$('.Productcenter-Box-img-hidden img').length-1;i++){
+						_this.numwidth=_this.numwidth+$('.Productcenter-Box-img-hidden img').eq(i).width();
+					}
+				}
+				
+				var width=($('.Productcenter-Box').width()-$('.positionjs').width())/2;
+				$('.Productcenter-Box-img-hidden').animate({marginLeft:-_this.numwidth+"px"});
+				$('.Productcenter-Box-img').width($('.positionjs').width());
+				$('.Productcenter-Box-img').css({marginLeft:-$('.Productcenter-Box-img').width()/2+"px"});
+				$('.Productcenter-Box-left').animate({width:width+"px"});$('.Productcenter-Box-right').animate({width:width+"px"});
+				
+			})
+		},
+		img:function(){//点击图片撤销弹窗
+			$('.Productcenter-Box-img-hidden img').click(function(){
+				$('.Productcenter-Box-img').width("0px");
+				$('.Productcenter-Box-left').animate({width:"50%"});$('.Productcenter-Box-right').animate({width:"50%"},function(){
+					$('.Productcenter-Box').fadeOut("slow",function(){
+						$('.Productcenter-body-div2-cloth').animate({bottom:"-100%"})
+					});
+				});
+			})
+		},
+		width:function(){//可视图片的宽度
+			$('.Productcenter-Box-img').width($('.positionjs').width());
+			$('.Productcenter-Box-img').css({marginLeft:-$('.Productcenter-Box-img').width()/2+"px"});
+		},
+		Boxwidth:function(){
+			var _this=this;
+			for(var i=0;i<$('.Productcenter-Box-img-hidden img').length;i++){//给img的父节点设置宽度
+				_this.num=_this.num+$('.Productcenter-Box-img-hidden img').eq(i).width();
+				$('.Productcenter-Box-img-hidden').width(_this.num+1)
+			}
+		},
+		init:function(){
+			var _this=this;
+			_this.width();
+			_this.click();
+			_this.img();
+			_this.Boxwidth();
+		}
+	}
+	Productcenterjson.init();
+	$('.Productcenter-body-div2 li').on("click",function(){//点击后弹出的效果
+		var url=$(this).attr('link');
+		console.log(url)
+		$.ajax({
+			type:"get",
+			url:url,
+			async:true,
+			dataType:'json',
+			success:function(json){
+					console.log(url)
+				var imgs=json.imgs;
+				for(var i=0;i<imgs.length;i++){
+				$('.Productcenter-Box-img-hidden img').eq(i).attr({src:imgs[i]})
+				}
+			},
+			error:function(){
+				
+			}
+		});
+		$('.Productcenter-body-div2-cloth').animate({bottom:"0%"},function(){	
+			$('.Productcenter-Box').css({display:'block'});
+			Productcenterjson.width();Productcenterjson.Boxwidth();
+			var width=($('.Productcenter-Box').width()-$('.Productcenter-Box-img').width())/2;
+			$('.Productcenter-Box-left').animate({width:width+"px"});$('.Productcenter-Box-right').animate({width:width+"px"});
+			
+			
+		})
+	})
+	$('.Productcenter-body-div div').click(function(){
+		if($('.Productcenter-Box').css("display")=='block'){
+			$('.Productcenter-Box-img').width("0px");
+			$('.Productcenter-Box-left').animate({width:"50%"});$('.Productcenter-Box-right').animate({width:"50%"},function(){
+				$('.Productcenter-Box').fadeOut("slow",function(){
+					$('.Productcenter-body-div2-cloth').animate({bottom:"-100%"})
+				});
+			});
+		}
+	})
