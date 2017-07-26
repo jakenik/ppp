@@ -282,3 +282,64 @@ var Productcenterresize=function (){
 			});
 		}
 	})
+////////////////////////////////////////////////////图片左右切换方法可灵活调用/////////////////////////////////////////////////////////
+var positionjson={
+	src:0,
+	bool:true,
+	init:function(objleft,objright,bool){
+		var _this=this;
+		_this.bool=bool;
+	  	var parentleft=objleft.parent().children('img');
+	  	var parentright=objright.parent().children('img');
+	  	objleft.click(function(){//左边
+	  		_this.bool=false;
+	  		for (var i=0;i<parentleft.length;i++){
+				if(parentleft.eq(i).is(".positionjs")==true){//判断当前位置
+					if(_this.src>0){//当前位置不是第一个的时候
+						_this.src=i-1;
+						parentleft.eq(_this.src).addClass('positionjs');//向前一个添加类
+						parentleft.eq(_this.src).fadeIn(300);
+					}
+					else{//当前位置是第一个的时候
+						_this.src=parentleft.length-1;
+						parentleft.eq(_this.src).addClass('positionjs');//向最后一个添加类
+						parentleft.eq(_this.src).fadeIn(300);
+					}
+					parentleft.eq(i).fadeOut(300);
+					parentleft.eq(i).removeClass('positionjs');//删除现在位置的类
+					break;
+				}
+			}
+	  	})
+	  	objright.click(function(){//右边
+//	  		_this.bool=false;
+				for (var i=0;i<parentright.length;i++){
+					if(parentright.eq(i).is(".positionjs")==true){
+						if(_this.src<parentright.length-1){//小于最后一个位置的时候
+							_this.src=i+1;
+						parentright.eq(_this.src).addClass('positionjs');//下一个添加类
+						parentright.eq(_this.src).fadeIn(300);
+						}
+						else{
+							_this.src=0;
+							parentright.eq(_this.src).addClass('positionjs');//当前位置是最后一个的时候向第一个添加类
+							parentright.eq(_this.src).fadeIn(300);
+						}
+						parentright.eq(i).fadeOut(300);
+						parentright.eq(i).removeClass('positionjs');//删除现在位置的类
+						break;
+					}
+				}	
+			});
+	
+		if(bool==true){
+			setInterval(function(){
+//				console.log(_this.bool,bool)
+				if(_this.bool==true){
+				   objright.click()
+				}
+			},3000);
+		}
+		
+	}
+}

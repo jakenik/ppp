@@ -1665,12 +1665,292 @@ transition:all 1s;
     width: 64%;
 	}
 }
-      
-    
-
-
-
-
+/*招商加盟*/
+.join {
+	width: 1200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 590px;
+	margin: -295px 0 0 -635px;
+	z-index: 5;
+}
+.join-div{
+	width: 168px;
+	height: 40px;
+	color: #000;
+	text-align: center;
+	line-height: 40px;
+	background: #fff;
+}
+.join-div2{
+	width: 100%;
+	height: 550px;
+	background: #fff;
+	padding: 22px 32px;
+}
+.join-div2-div1{
+	width: 206px;
+	height: 100%;
+	float: left;
+}
+.join-div2-div2 {
+    width: 947px;
+    padding-left: 47px;
+    float: left;
+    height: 100%;
+}
+.join-div2-div1-input1,.join-div2-div1-input2{
+	margin-top: 8px;
+	width: 100%;
+	height:28px ;
+	position: relative;
+	border: 1px #999999 solid;
+}
+.join-div2-div1-input1 p,.join-div2-div1-input2 p{
+	border-right: 1px #999999 solid;
+	width: 175px;
+	/*display: inline-block;*/
+	float: left;
+	height: 100%;
+	line-height: 28px;text-align: center;
+}
+.join-div2-div1-input1 i,.join-div2-div1-input2 i{
+	background: url("../img/bussiness-icon.png") no-repeat -4px -7px;
+	width: 30px;
+	float: left;
+	height: 100%;
+	line-height: 28px;text-align: center;
+}
+.join-div2-div1-input-text{
+	margin-top: 13px;
+	border-top: 1px solid #999;
+	padding-top: 12px;
+}
+.join-div2-div1-input-text li{
+	list-style: initial;
+	line-height: 25px;
+}
+.join-div2-div1-input1-ul,.join-div2-div1-input2-ul{
+	position: absolute;
+	bottom: -97px;
+	width: 100%;
+	background: #cfcfcf;
+	line-height: 30px;
+	text-align: center;
+	display: none;
+	z-index: 20;
+}
+.join-div2-div1-input1-ul li,.join-div2-div1-input2-ul li{
+	margin-top: 2px;
+}
+.join-div2-div1-input1-ul li:hover,.join-div2-div1-input2-ul li:hover{
+	background: #000;
+	color: #fff;
+}
+.join-div2-div2-img{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.join-div2-div2-img img{
+	height: 100%;
+	width: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.tail-logo-left,.tail-logo-right{
+	position: absolute;
+	top: 50%;
+	width: 38px;
+	height: 60px;
+	margin-top: -30px;
+	z-index: 9;
+	background: url("../img/bussiness-icon.png") no-repeat;
+}
+.tail-logo-left{
+	left: 0;
+	background-position: -0px -170px;
+	
+}
+.tail-logo-right{
+	right: 0;
+	background-position: -0px -235px;
+}
+.join-div2-div2-img-position{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	bottom: 2px;
+	right: 2px;
+	z-index: 10;
+	background: url("../img/bussiness-icon.png") no-repeat center -361px #fff;
+}
+.join-div2-div2-img-position-div{
+	width: 99.6%;
+	position: absolute;
+	bottom: -38%;
+	right: 2px;
+	height: 38%;
+	background: #fff;
+	z-index: 9;
+	
+}
+.join-div2-div2-img-position-ul-li1{
+	height: 47px;
+	line-height: 47px;
+	border-bottom: #666 solid 1px;
+	list-style: initial;
+	margin-left: 32px;
+	font-size: 16px;
+}
+.join-div2-div2-img-position-ul-li2{
+	line-height: 40px;
+	color: #666666;
+	margin-left: 32px;
+	padding-left: 14px;
+}
+.join-div2-div2-img-xx{
+	position: absolute;right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+@media only screen and (max-width:1280px) {
+	.join {
+		width: 1126px;
+    margin: -295px 0 0 -588px;
+	}
+	.join-div2-div2 {
+    width: 850px;
+	}
+}
+@media only screen and (max-width:1183px) {
+	.join {
+		width: 830px;
+    margin: -295px 0 0 -440px;
+	}
+	.join-div2-div2 {
+    width: 560px;
+	}
+}
+@media only screen and (max-width:902px) {
+	.join {
+		width: 640px;
+    margin: -295px 0 0 -355px;
+	}
+	.join-div2-div2 {
+    width:420px;
+	}
+	.join-div2-div1-input1 p, .join-div2-div1-input2 p {
+    width: 129px;
+	}
+	.join-div2-div1 {
+    width: 160px;
+	}
+}
+@media only screen and (max-width:713px) {
+	.join {
+    width: 464px;
+    margin: -295px 0 0 -265px;
+	}
+	.join-div2-div2 {
+    width: 300px;
+	}
+	.join-div2-div1-input1 p, .join-div2-div1-input2 p {
+    width: 86px;
+	}
+	.join-div2-div1 {
+    width: 117px;
+	}
+}
+@media only screen and (max-width:546px) {
+	.join {
+    width: 349px;
+    margin: -187px 0 0 -207px;
+    height: 406px;
+	}
+	.join-div2-div2 {
+    width: 229px;
+    height: 242px;
+	}
+	.join-div2-div1-input1 p, .join-div2-div1-input2 p {
+    width: 42px;
+	}
+	.join-div2-div1 {
+    width: 73px;
+	}
+	.join-div2 {
+    height: 321px;
+	}
+}
+@media only screen and (max-width:375px) {
+	.join {
+    width: 349px;
+    margin: -187px 0 0 -183px;
+    height: 406px;
+	}
+	.join-div2 {
+    width: 100%;
+    height: 550px;
+    background: #fff;
+    padding: 21px 8px;
+	}
+	.join-div2-div1-input1 p, .join-div2-div1-input2 p {
+    width: 42px;
+	}
+	.join-div2-div1 {
+    width: 73px;
+	}
+	.join-div2 {
+    height: 321px;
+	}
+}
+@media only screen and (max-width:320px) {
+	.join {
+    width: 277px;
+    margin: -183px 0 0 -145px;
+	}
+	.join-div2 {
+    width: 100%;
+    height: 550px;
+    background: #fff;
+    padding: 21px 8px;
+	}
+	.join-div2-div1-input1 p, .join-div2-div1-input2 p {
+    width: 36px;
+    font-size: 12px;
+	}
+	.join-div2-div1 {
+    width: 67px;
+	}
+	.join-div2 {
+    height: 321px;
+	}
+	.join-div2-div2 {
+    width: 203px;
+    height: 242px;
+    padding-left: 7px;
+	}
+	.tail-logo-left {
+    background-position: -6px -174px;
+	}
+	.tail-logo-right {
+    background-position: -0px -238px;
+	}
+	.tail-logo-left, .tail-logo-right {
+	    position: absolute;
+	    top: 50%;
+	    width: 28px;
+	    height: 50px;
+	    margin-top: -25px;
+	}
+}
 /* Start: Recommended Isotope styles */
 
 /**** Isotope Filtering ****/
