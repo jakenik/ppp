@@ -95,7 +95,6 @@ var josn={
 					$(".cloth").css({display:"block"});
 					$(".position-div").removeClass("myframesout");$(".position-div").addClass("myframesinit");
 					$(".cloth").click(function(){
-						console.log(1)
 						$(".position-div").removeClass("myframesinit");$(".position-div").addClass("myframesout");
 						_this.bool=false;
 						$(".cloth").css({display:"none"});
@@ -157,7 +156,6 @@ var Productcenterresize=function (){
 					if($('.Productcenter-Box-img-hidden img').eq(i).is(".positionjs")==true){
 						if(_this.src<$('.Productcenter-Box-img-hidden img').length-1){
 							_this.src=i+1;
-//							console.log(_this.src,$('.Productcenter-Box-img-hidden img').length)
 						$('.Productcenter-Box-img-hidden img').eq(_this.src).addClass('positionjs');
 						}
 						else{
@@ -246,14 +244,12 @@ var Productcenterresize=function (){
 	Productcenterjson.init();
 	$('.Productcenter-body-div2 li').on("click",function(){//点击后弹出的效果
 		var url=$(this).attr('link');
-		console.log(url)
 		$.ajax({
 			type:"get",
 			url:url,
 			async:true,
 			dataType:'json',
 			success:function(json){
-					console.log(url)
 				var imgs=json.imgs;
 				for(var i=0;i<imgs.length;i++){
 				$('.Productcenter-Box-img-hidden img').eq(i).attr({src:imgs[i]})
@@ -334,7 +330,6 @@ var positionjson={
 	
 		if(bool==true){
 			setInterval(function(){
-//				console.log(_this.bool,bool)
 				if(_this.bool==true){
 				   objright.click()
 				}
@@ -343,3 +338,16 @@ var positionjson={
 		
 	}
 }
+//首页的img移入放大效果
+$('.index-middle-div li').on('mouseenter',function(){
+	console.log($(this).find('.index-m-more'))
+	$(this).find('.index-m-more').fadeIn();
+	$(this).find('img').animate({width:"120%",marginTop:"-30px",marginLeft:"-48px"})
+	$(this).find('div').animate({marginTop:"-20px"})
+})
+$('.index-middle-div li').on('mouseleave',function(){
+	console.log($(this).find('.index-m-more'))
+	$(this).find('.index-m-more').fadeOut();
+	$(this).find('img').animate({width:"100%",marginTop:"-0px",marginLeft:"-0px"})
+	$(this).find('div').animate({marginTop:"-0px"})
+})

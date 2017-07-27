@@ -64,6 +64,7 @@ body {
   font-size: 14px;
   color: #666666;
 }
+/*首页*/
 .clearFix {
   *zoom: 1;
 }
@@ -125,6 +126,7 @@ body {
   position: relative;
   z-index: 3;
   transform: translateX(693px);
+  background: #000;
 }
 .head-ul li {
   margin: 0 13px 0 34px;
@@ -132,9 +134,10 @@ body {
   line-height: 14px;
   float: left;
   padding-top: 6px;
+  padding-bottom: 6px;
 }
 .head-ul li  a{
-  color: #3042d0;
+  color: #fff;
 }
 .mouse {
     width: 37px;
@@ -152,6 +155,8 @@ body {
 .mouse img {
   width: auto;
 }
+.index-m-more{ display: inline-block; vertical-align: top; width: 94px; height: 22px; border: #fff 1px solid; overflow: hidden;cursor: pointer; margin-top: 14px; background:url(../img/common-icon.png) no-repeat;background-position: 79px 4px;}
+.index-m-more i{ display: block; width: 71px; border-right: 1px solid #fff; height: 22px; line-height: 22px; cursor: pointer;font-size: 14px !important;}
 .font {
   position: absolute;
   z-index: 1;
@@ -334,12 +339,21 @@ body {
   margin: 15px 6px 0px 6px;
   float: left;
   text-align: center;
+  overflow: hidden;
+  width: 386px;
+  height: 188px;
+}
+@media  screen and (max-width:555px ) {
+	.index-middle-div li {
+  width: 100%;
+  height: 100%;
+	}
 }
 .index-middle-div li a {
   display: block;
   position: relative;
 }
-.index-middle-div li div {
+.index-middle-div li div{
   position: absolute;
   top: 0;
   width: 100%;
@@ -1272,7 +1286,7 @@ transition:all 1s;
 .Brandworld-body-div2 li{ float:left; margin:0 6px 6px 0; _display:inline; position:relative; z-index:6; width:235px; height:146px;}
 .Brandworld-body-div2 img{ position:absolute; left:0; top:0; width:100%; height:100%;}
 .Brandworld-body-div2 span{ display:none; position:absolute; left:0; bottom:0; z-index:6; width:100%; line-height:34px; text-indent:15px; background:#202020; color:#fff;}
-.Brandworld-body-div2 i{ position:absolute; right:5px; top:5px; width:24px; height:24px; background:url(../images/brand-icon.png) no-repeat 0 -49px;}
+.Brandworld-body-div2 i{ position:absolute; right:5px; top:5px; width:24px; height:24px; }
 .Brandworld-body-div2 li:hover{ z-index:5;}
 .Brandworld-body-div2 li:hover span{ display:block;}
 .Brandworld-body-div2 li:hover img{width:115%;height:auto; margin:-4.5% 0 0 -8%; box-shadow:0px 0px 15px #000;}
@@ -1951,6 +1965,47 @@ transition:all 1s;
 	    margin-top: -25px;
 	}
 }
+/*招商加盟*/
+.contactdiv{
+	float: left;
+}
+.contactdiv2{
+	float: left;
+	background: #999999;
+	
+}
+.contact-div2{
+	padding-top: 42px;
+	padding-left: 35px;
+	overflow-y: auto;
+}
+.contact-div2 div{
+	height: 370px;
+	float: left;
+	margin-left: 27px;
+}
+.contact-div2-text{
+	line-height: 25px;
+	color: #000;
+}
+@media only screen and (max-width:414px ) {
+	.contact-div2{
+		width: 99%;
+	}
+}
+@media only screen and (max-width:375px ) {
+	.contact-div2{
+		width: 93%;
+	}
+}
+@media only screen and (max-width:375px ) {
+	.contact-div2{
+		width: 90%;
+	}
+	.join-div {
+    width: 131px;
+	}
+}
 /* Start: Recommended Isotope styles */
 
 /**** Isotope Filtering ****/
@@ -2066,7 +2121,7 @@ transition:all 1s;
 {
 	/*background: #6e1515;*/
 	position: relative;
-	background:url(../images/bar-line.gif) repeat-y;
+	background:url("../img/bar-line.gif") repeat-y;
 }
 
 .jspDrag
