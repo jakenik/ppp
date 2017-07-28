@@ -1,10 +1,9 @@
 (function(){//img自适应
 	var width=$(".head-div img").eq(0).outerWidth();
-	var imgwidth2=$(".aobout-head-bg-img").outerWidth();
+	var imgwidth2=$(".about-head-bg").outerWidth();
 	function size(){
 		var windowwidth=$(window).width();
 		var height=$(window).height();
-		console.log(width,windowwidth,imgwidth2)
 		var num1=-(width-windowwidth)/2.5;
 		$(".head").css({height:height});
 		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
@@ -352,13 +351,11 @@ var positionjson={
 }
 //首页的img移入放大效果
 $('.index-middle-div li').on('mouseenter',function(){
-	console.log($(this).find('.index-m-more'))
 	$(this).find('.index-m-more').fadeIn();
 	$(this).find('img').animate({width:"120%",marginTop:"-30px",marginLeft:"-48px"})
 	$(this).find('div').animate({marginTop:"-20px"})
 })
 $('.index-middle-div li').on('mouseleave',function(){
-	console.log($(this).find('.index-m-more'))
 	$(this).find('.index-m-more').fadeOut();
 	$(this).find('img').animate({width:"100%",marginTop:"-0px",marginLeft:"-0px"})
 	$(this).find('div').animate({marginTop:"-0px"})
