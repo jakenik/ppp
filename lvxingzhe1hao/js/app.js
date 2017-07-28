@@ -10,9 +10,10 @@
 		$(".head-bg").css({height:height,transform:"translateX("+num1+"px)"});
 		//关于我们的背景变化
 		$(".about-kong").css({height:height});
+		$('.about-head-bg').height(height)
 		if(windowwidth<1025 && windowwidth>414){
 			var num2=-(imgwidth2-windowwidth)
-			$(".aobout-head-bg-img").css({height:height,transform:"translateX("+num2+"px)"})
+			$(".aobout-head-bg-img").css({transform:"translateX("+num2+"px)"})
 		}
 		else{
 		var num2=-(imgwidth2-windowwidth)/2
@@ -24,7 +25,7 @@
 		else{
 			$('.about-kong-div').removeAttr('style');
 		}
-		$(".aobout-head-bg-img").css({height:height,transform:"translateX("+num2+"px)"})
+		$(".aobout-head-bg-img").css({transform:"translateX("+num2+"px)"})
 		//设置第二块固定视图的高度
 		$(".jsheight").css({height:height})
 		//设置视频

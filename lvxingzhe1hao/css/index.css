@@ -619,6 +619,7 @@ body {
 	height: 100%;
 	width: 100%;
 	position: absolute;
+	background: #000;
 }
 .about-head-bg{
     position: fixed;
@@ -626,11 +627,13 @@ body {
     top: 0;
     left: 0;
     background: #000;
-    width: 1920px
+    width: 1920px;
     height: 100%;
+    background: #090909;
 }
 .aobout-head-bg-img{
 width: auto;
+height: 100%;
 }
 .about-kong-div{
 	width: 60.5%;
