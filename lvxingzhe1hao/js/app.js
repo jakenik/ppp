@@ -4,22 +4,29 @@
 	function size(){
 		var windowwidth=$(window).width();
 		var height=$(window).height();
-		
 		var winwidth1=$(window).width();
 		var num1=-(width-winwidth1)/2.5;
-		$(".head").css({height:height})
-		$(".head-bg").css({transform:"translateX("+num1+"px)",height:height})
-		$(".bussiness-li img").css({transform:"translateX("+num1+"px)",height:height})
+		$(".head").css({height:height});
+		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
+		$(".head-bg").css({height:height,transform:"translateX("+num1+"px)"});
 		//关于我们的背景变化
 		$(".about-kong").css({height:height});
 		if(windowwidth<1025 && windowwidth>414){
 			var num2=-(imgwidth2-winwidth1)
-			$(".aobout-head-bg-img").css({transform:"translateX("+num2+"px)",height:height})
+			$(".aobout-head-bg-img").css({height:height,transform:"translateX("+num2+"px)"})
 		}
 		else{
 		var num2=-(imgwidth2-winwidth1)/2
 		}
-		$(".aobout-head-bg-img").css({transform:"translateX("+num2+"px)",height:height})
+		//关于我们兼容手机的菜单移动修改
+		if($(window).width()<787){
+			console.log(1)
+			$('.about-kong-div').css({width:$(window).width()+"px"})
+		}
+		else{
+			$('.about-kong-div').removeAttr('style');
+		}
+		$(".aobout-head-bg-img").css({height:height,transform:"translateX("+num2+"px)"})
 		//设置第二块固定视图的高度
 		$(".jsheight").css({height:height})
 		//设置视频
@@ -31,6 +38,8 @@
 		$(".cloth").height($("body").outerHeight())	
 		//品牌世界弹窗
 		$('.Brandworld-Box').height($('.Brandworld').height())	
+		//
+		$('.windosjs').height(height)
 	};
 	size();	
 	$(window).resize(function(){//屏幕变化时候触发
@@ -88,27 +97,30 @@ var josn={
 		$(".head-position-div").click(function(){//功能菜单栏出来和隐藏
 			if(_this.bool==false){
 				
-				$(".head-ul").removeClass("myframesout");
-				$(".head-ul").addClass("myframesinit");
-				_this.bool=true;
-				if($(window).width()<931){
+				
+				if($(window).width()<931){//功能手机端菜单兼容
+					$('.jsmargin').animate({marginLeft:"-200px"},200)
 					$(".cloth").css({display:"block"});
-					$(".position-div").removeClass("myframesout");$(".position-div").addClass("myframesinit");
-					$(".cloth").click(function(){
-						$(".position-div").removeClass("myframesinit");$(".position-div").addClass("myframesout");
+					$(".position-div").removeClass("myframesout");
+					$(".cloth").on("click touchstart",function(){
+						$('.jsmargin').animate({marginLeft:"-0px"},200);
+						
 						_this.bool=false;
 						$(".cloth").css({display:"none"});
 					})
 				}
+				else{
+					$(".position-div").removeClass("myframesout");
+					$(".position-div").addClass("myframesinit");
+					_this.bool=true;
+				}
 			}
 			else{
-				$(".head-ul").removeClass("myframesinit");
-				$(".head-ul").addClass("myframesout");
-				_this.bool=false;
-				if($(window).width()<931){
-					$(".cloth").css({display:"block"});
-					$(".position-div").removeClass("myframesinit");$(".position-div").addClass("myframesout");
-				}
+				
+					$(".position-div").removeClass("myframesinit");
+					$(".position-div").addClass("myframesout");
+					_this.bool=false;
+				
 			}
 		})
 	}
@@ -283,6 +295,7 @@ var positionjson={
 	src:0,
 	bool:true,
 	init:function(objleft,objright,bool){
+		
 		var _this=this;
 		_this.bool=bool;
 	  	var parentleft=objleft.parent().children('img');

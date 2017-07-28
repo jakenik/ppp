@@ -32,7 +32,8 @@
 	</head>
 
 	<body>
-		<div class="about-head">
+		<div class="jsmargin">
+		<div class="about-head clearFix">
 			<div class="about-head-bg"><img src="img/about.jpg" class="aobout-head-bg-img" style="width: auto;" /></div>
 			<div class="logo">
 				<img src="img/logo.png" />
@@ -87,6 +88,7 @@
 				</ul>
 			</div>
 		</div>
+		</div>
 		<!--视频-->
 		<div class="fixed-video" style="display:none;">
 			<div class="fixed-video-main">
@@ -103,7 +105,7 @@
 				<div class="Details-div1">
 					<div class="Details-div1-left"><div></div></div>
 					<div class="Details-div1-right"><div></div></div>
-					<img src="" style="display: block;"/>
+					<img src="" style="display: block;" class="positionjs"/>
 					<img src=""/>
 					<img src=""/>
 				</div>
@@ -222,38 +224,7 @@
  index:null,
  init:function(){
  	var _this=this;
-		 $(".Details-div1-right").click(function(){
-		 	for(var i=0; i<$(".Details-div1 img").length;i++){
-		 		if($(".Details-div1 img").eq(i).css('display')=="block"){
-		 			_this.index=i;
-		 			$(".Details-div1 img").eq(_this.index).fadeOut(200);		 			
-		 		}
-		 	}
-		 	
-		 	if(_this.index<$(".Details-div1 img").length){
-		 		++_this.index
-		 		$(".Details-div1 img").eq(_this.index).fadeIn(200);
-		 	}
-		 	
-		 	if(_this.index==$(".Details-div1 img").length){
-		 		$(".Details-div1 img").eq(0).fadeIn(200);
-		 	}
-		 })
-		 $(".Details-div1-left").click(function(){
-		 	for(var i=0; i<$(".Details-div1 img").length;i++){
-		 		if($(".Details-div1 img").eq(i).css('display')=="block"){
-		 			_this.index=i;
-		 			$(".Details-div1 img").eq(_this.index).fadeOut(200);		 			
-		 		}
-		 	}
-		 	if(_this.index==0){
-		 		$(".Details-div1 img").eq($(".Details-div1 img").length-1).fadeIn(200);
-		 	}
-		 	if(_this.index>0){
-		 		--_this.index
-		 		$(".Details-div1 img").eq(_this.index).fadeIn(200);
-		 	}
-		 })
+ 	 positionjson.init($(".Details-div1-left"),$(".Details-div1-right"),false)
 		 var resize=function (){
 			 	var windowwidth=$(window).width();
 			 	var windowheight=$(window).height();
