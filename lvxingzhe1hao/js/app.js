@@ -1,26 +1,25 @@
 (function(){//img自适应
-	var width=$(".head-bg").outerWidth();
+	var width=$(".head-div img").eq(0).outerWidth();
 	var imgwidth2=$(".aobout-head-bg-img").outerWidth();
 	function size(){
 		var windowwidth=$(window).width();
 		var height=$(window).height();
-		var winwidth1=$(window).width();
-		var num1=-(width-winwidth1)/2.5;
+		console.log(width,windowwidth,imgwidth2)
+		var num1=-(width-windowwidth)/2.5;
 		$(".head").css({height:height});
 		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
 		$(".head-bg").css({height:height,transform:"translateX("+num1+"px)"});
 		//关于我们的背景变化
 		$(".about-kong").css({height:height});
 		if(windowwidth<1025 && windowwidth>414){
-			var num2=-(imgwidth2-winwidth1)
+			var num2=-(imgwidth2-windowwidth)
 			$(".aobout-head-bg-img").css({height:height,transform:"translateX("+num2+"px)"})
 		}
 		else{
-		var num2=-(imgwidth2-winwidth1)/2
+		var num2=-(imgwidth2-windowwidth)/2
 		}
 		//关于我们兼容手机的菜单移动修改
 		if($(window).width()<787){
-			console.log(1)
 			$('.about-kong-div').css({width:$(window).width()+"px"})
 		}
 		else{

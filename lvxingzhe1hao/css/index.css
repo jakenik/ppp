@@ -81,7 +81,6 @@ body {
   margin: 0 auto;
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 .head-div {
   background: #000;
@@ -91,6 +90,10 @@ body {
   top: 0;
   height: 100%;
   overflow: hidden;
+  width: 100%;
+}
+.head-div img{
+	width: 1920px;
 }
 .head-bg {
   width: auto;
@@ -105,6 +108,12 @@ body {
   top: 40px ;
   right: 0px;
   z-index: 99;
+  overflow: hidden;
+}
+@media only screen and (max-width:930px ) {
+	.head-position{
+		overflow: initial;
+	}
 }
 .logo {
   height: 82px;
@@ -225,9 +234,9 @@ body {
     background: rgba(0, 0, 0, 1);
     overflow: auto;
     z-index: 99;
-    transform: translateX(200px);
+    transform: translateX(198px);
     top: 0;
-    width: 200px;
+    width: 202px;
   }
   .head-ul {
     width: 200px;
@@ -617,12 +626,15 @@ body {
     top: 0;
     left: 0;
     background: #000;
-    width: 100%;
+    width: 1920px
     height: 100%;
+}
+.aobout-head-bg-img{
+width: auto;
 }
 .about-kong-div{
 	width: 60.5%;
-	margin: 0 auto 0px;
+	margin: 0 auto 333px;
 	position: relative;
 	padding-top: 272px;
 	top: 0;
