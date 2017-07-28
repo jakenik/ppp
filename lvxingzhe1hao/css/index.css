@@ -105,7 +105,6 @@ body {
   top: 40px ;
   right: 0px;
   z-index: 99;
-  overflow: hidden;
 }
 .logo {
   height: 82px;
@@ -217,6 +216,7 @@ body {
 @media screen and (max-width: 930px) {
   .head-position {
     width: 200px;
+    overflow: initial;
   }
 }
 @media screen and (max-width: 930px) {
