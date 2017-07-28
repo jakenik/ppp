@@ -5,18 +5,20 @@
 		var windowwidth=$(window).width();
 		var height=$(window).height();
 		var num1=-(width-windowwidth)/2.5;
-		$(".head").css({height:height});
+		$(".head-bg").css({height:height});
+		$('.head').css({height:height});
 		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
-		$(".head-bg").css({height:height,transform:"translateX("+num1+"px)"});
+		
+		$(".head-bg").css({marginLeft:-$('.head-bg').width()/2});
 		//关于我们的背景变化
 		$(".about-kong").css({height:height});
-		$('.about-head-bg').height(height)
-		if(windowwidth<1025 && windowwidth>414){
-			var num2=-(imgwidth2-windowwidth)
-			$(".aobout-head-bg-img").css({height:height,transform:"translateX("+num2+"px)"})
+		$('.about-head-bg').height(height)	
+		$(".aobout-head-bg-img").css({height:height})
+		if(windowwidth<906){
+			$('.aobout-head-bg-img').css({marginLeft:-$('.aobout-head-bg-img').width()/1.5})
 		}
 		else{
-		var num2=-(imgwidth2-windowwidth)/2
+			$('.aobout-head-bg-img').css({marginLeft:-$('.aobout-head-bg-img').width()/2})
 		}
 		//关于我们兼容手机的菜单移动修改
 		if($(window).width()<787){
@@ -25,7 +27,7 @@
 		else{
 			$('.about-kong-div').removeAttr('style');
 		}
-		$(".aobout-head-bg-img").css({height:height,transform:"translateX("+num2+"px)"})
+
 		//设置第二块固定视图的高度
 		$(".jsheight").css({height:height})
 		//设置视频
