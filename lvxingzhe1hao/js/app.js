@@ -7,19 +7,23 @@
 		var num1=-(width-windowwidth)/2.5;
 		$(".head-bg").css({height:height});
 		$('.head').css({height:height});
-		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
 		
+		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
 		$(".head-bg").css({marginLeft:-$('.head-bg').width()/2});
+
 		//关于我们的背景变化
-		$(".about-kong").css({height:height});
-		$('.about-head-bg').height(height)	
 		$(".aobout-head-bg-img").css({height:height})
-		if(windowwidth<906){
-			$('.aobout-head-bg-img').css({marginLeft:-$('.aobout-head-bg-img').width()/1.5})
-		}
-		else{
-			$('.aobout-head-bg-img').css({marginLeft:-$('.aobout-head-bg-img').width()/2})
-		}
+		$(".about-kong").css({height:height});
+		$('.about-head-bg').height(height);
+		setTimeout(function(){
+			if(windowwidth<906){
+				
+				$('.aobout-head-bg-img').css({marginLeft:-$('.aobout-head-bg-img').width()/1.5})
+			}
+			else{
+				$('.aobout-head-bg-img').css({marginLeft:-$('.aobout-head-bg-img').width()/2})	
+			}
+		},200)
 		//关于我们兼容手机的菜单移动修改
 		if($(window).width()<787){
 			$('.about-kong-div').css({width:$(window).width()+"px"})

@@ -1679,6 +1679,7 @@ transition:all 1s;
 }
 .Productcenter-Box-img-hidden img{
 	float: left;
+	display: inline-block;
 }
 .Productcenter-Box-img img{
 	display: inline-block;
