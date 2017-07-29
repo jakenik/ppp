@@ -9,7 +9,7 @@
 		$('.head').css({height:height});
 		
 		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
-		if($(".head-bg").widht()!=0){
+		if($(".head-bg").width()!=0){
 			$(".head-bg").css({marginLeft:-$('.head-bg').width()/2});
 		}
 		else{
