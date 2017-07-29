@@ -9,8 +9,13 @@
 		$('.head').css({height:height});
 		
 		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
-		$(".head-bg").css({marginLeft:-$('.head-bg').width()/2});
-
+		if($(".head-bg").widht()!=0){
+			$(".head-bg").css({marginLeft:-$('.head-bg').width()/2});
+		}
+		else{
+			$(".head-bg").width(height*2.17440544);
+			$(".head-bg").css({marginLeft:-$('.head-bg').width()/2});
+		}
 		//关于我们的背景变化
 		$(".aobout-head-bg-img").css({height:height})
 		$(".about-kong").css({height:height});
