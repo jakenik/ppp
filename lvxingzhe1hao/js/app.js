@@ -15,15 +15,27 @@
 		$(".aobout-head-bg-img").css({height:height})
 		$(".about-kong").css({height:height});
 		$('.about-head-bg').height(height);
-		setTimeout(function(){
+		if($('.aobout-head-bg-img').width()!=0){
+			var aoboutwidth=$('.aobout-head-bg-img').width();
 			if(windowwidth<906){
 				
-				$('.aobout-head-bg-img').css({marginLeft:-$('.aobout-head-bg-img').width()/1.5})
+				$('.aobout-head-bg-img').css({marginLeft:-aoboutwidth/1.5})
 			}
 			else{
-				$('.aobout-head-bg-img').css({marginLeft:-$('.aobout-head-bg-img').width()/2})	
+				$('.aobout-head-bg-img').css({marginLeft:-aoboutwidth/2})	
 			}
-		},200)
+		}
+		else{
+			$('.aobout-head-bg-img').width(height*2.17440544);
+			var aoboutwidth=$('.aobout-head-bg-img').width();
+			if(windowwidth<906){
+				
+				$('.aobout-head-bg-img').css({marginLeft:-aoboutwidth/1.5})
+			}
+			else{
+				$('.aobout-head-bg-img').css({marginLeft:-aoboutwidth/2})	
+			}
+		}
 		//关于我们兼容手机的菜单移动修改
 		if($(window).width()<787){
 			$('.about-kong-div').css({width:$(window).width()+"px"})
