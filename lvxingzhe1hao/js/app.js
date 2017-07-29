@@ -262,10 +262,10 @@ var Productcenterresize=function (){
 		},
 		Boxwidth:function(){
 			var _this=this;
-			for(var i=0;i<$('.Productcenter-Box-img-hidden img').length;i++){//给img的父节点设置宽度
+			/*for(var i=0;i<$('.Productcenter-Box-img-hidden img').length;i++){//给img的父节点设置宽度
 				_this.num=_this.num+$('.Productcenter-Box-img-hidden img').eq(i).width();
 				$('.Productcenter-Box-img-hidden').width(_this.num+1);
-			}
+			}*/
 		},
 		init:function(){
 			var _this=this;
