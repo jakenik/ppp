@@ -7,8 +7,11 @@
 		var num1=-(width-windowwidth)/2.5;
 		$(".head-bg").css({height:height});
 		$('.head').css({height:height});
-		
-		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
+		$(".bussiness-li img").css({height:height,width:height*2.4});
+//		$(".bussiness-li img").css({height:height,transform:"translateX("+num1+"px)"});
+		if($(".bussiness-li img")!=0){
+			$(".bussiness-li img").css({marginLeft:-$(".bussiness-li img").width()/2});
+		}
 		if($(".head-bg").width()!=0){
 			$(".head-bg").css({marginLeft:-$('.head-bg').width()/2});
 		}
@@ -42,8 +45,9 @@
 			}
 		}
 		//关于我们兼容手机的菜单移动修改
-		if($(window).width()<787){
-			$('.about-kong-div').css({width:$(window).width()+"px"})
+		if(windowwidth<787){
+			$('.windosjs').height(height)//品牌世界底部和上面的高度
+			$('.about-kong-div').css({width:windowwidth+"px"})
 		}
 		else{
 			$('.about-kong-div').removeAttr('style');
@@ -60,8 +64,7 @@
 		$(".cloth").height($("body").outerHeight())	
 		//品牌世界弹窗
 		$('.Brandworld-Box').height($('.Brandworld').height())	
-		//
-		$('.windosjs').height(height)
+		
 	};
 	size();	
 	$(window).resize(function(){//屏幕变化时候触发
@@ -86,6 +89,7 @@ var josn={
 	boolnum:1,
 	fadeOut:function(){//功能视频的淡入淡出
 		$(".index-middle-div-i").click(function(){
+			console.log(1)
 			$(".fixed-video").fadeIn(400);
 		})
 		$(".fixed-video-xx").click(function(){
@@ -116,35 +120,41 @@ var josn={
 		setInterval(function(){
 		    _this.Switch();
 		},3000);
-		$(".head-position-div").click(function(){//功能菜单栏出来和隐藏
-			if(_this.bool==false){
-				
-				
-				if($(window).width()<931){//功能手机端菜单兼容
-					$('.jsmargin').animate({marginLeft:"-200px"},200)
-					$(".cloth").css({display:"block"});
-					$(".position-div").removeClass("myframesout");
-					$(".cloth").on("click touchstart",function(){
-						$('.jsmargin').animate({marginLeft:"-0px"},200);
-						
-						_this.bool=false;
-						$(".cloth").css({display:"none"});
-					})
+		var browser=navigator.appName ;
+		var b_version=navigator.appVersion ;
+		var version=b_version.split(";"); 
+		var trim_Version=version[1].replace(/[ ]/g,""); 
+		if(browser!="Microsoft Internet Explorer" || trim_Version=="MSIE10.0" || trim_Version=="MSIE11.0"|| trim_Version=="MSIE12.0"){
+			$(".head-position-div").click(function(){//功能菜单栏出来和隐藏
+				if(_this.bool==false){
+					
+					
+					if($(window).width()<931){//功能手机端菜单兼容
+						$('.jsmargin').animate({marginLeft:"-200px"},200)
+						$(".cloth").css({display:"block"});
+						$(".position-div").removeClass("myframesout");
+						$(".cloth").on("click touchstart",function(){
+							$('.jsmargin').animate({marginLeft:"-0px"},200);
+							
+							_this.bool=false;
+							$(".cloth").css({display:"none"});
+						})
+					}
+					else{
+						$(".position-div").removeClass("myframesout");
+						$(".position-div").addClass("myframesinit");
+						_this.bool=true;
+					}
 				}
 				else{
-					$(".position-div").removeClass("myframesout");
-					$(".position-div").addClass("myframesinit");
-					_this.bool=true;
+					
+						$(".position-div").removeClass("myframesinit");
+						$(".position-div").addClass("myframesout");
+						_this.bool=false;
+					
 				}
-			}
-			else{
-				
-					$(".position-div").removeClass("myframesinit");
-					$(".position-div").addClass("myframesout");
-					_this.bool=false;
-				
-			}
-		})
+			})
+		}
 	}
 }
 josn.init();
@@ -208,7 +218,11 @@ var Productcenterresize=function (){
 					_this.numwidth=_this.numwidth+current;
 				}
 				$('.Productcenter-Box-img-hidden').animate({marginLeft:-_this.numwidth+"px"});
+				if($('.positionjs').width()!=0){
 				$('.Productcenter-Box-img').width($('.positionjs').width());
+				}else{
+					$('.Productcenter-Box-img').width($('.positionjs').width());
+				}
 				$('.Productcenter-Box-img').css({marginLeft:-$('.Productcenter-Box-img').width()/2+"px"});
 				$('.Productcenter-Box-left').animate({width:width+"px"});$('.Productcenter-Box-right').animate({width:width+"px"});
 				
@@ -262,10 +276,10 @@ var Productcenterresize=function (){
 		},
 		Boxwidth:function(){
 			var _this=this;
-			/*for(var i=0;i<$('.Productcenter-Box-img-hidden img').length;i++){//给img的父节点设置宽度
+			for(var i=0;i<$('.Productcenter-Box-img-hidden img').length;i++){//给img的父节点设置宽度
 				_this.num=_this.num+$('.Productcenter-Box-img-hidden img').eq(i).width();
 				$('.Productcenter-Box-img-hidden').width(_this.num+1);
-			}*/
+			}
 		},
 		init:function(){
 			var _this=this;
@@ -376,11 +390,57 @@ var positionjson={
 //首页的img移入放大效果
 $('.index-middle-div li').on('mouseenter',function(){
 	$(this).find('.index-m-more').fadeIn();
-	$(this).find('img').animate({width:"120%",marginTop:"-30px",marginLeft:"-48px"})
-	$(this).find('div').animate({marginTop:"-20px"})
+	$(this).find('a').animate({width:"120%",marginTop:"-30px",marginLeft:"-48px"})
 })
 $('.index-middle-div li').on('mouseleave',function(){
 	$(this).find('.index-m-more').fadeOut();
-	$(this).find('img').animate({width:"100%",marginTop:"-0px",marginLeft:"-0px"})
-	$(this).find('div').animate({marginTop:"-0px"})
+	$(this).find('a').animate({width:"100%",marginTop:"-0px",marginLeft:"-0px"})
 })
+////////////////////////////////////////////////////////////////////ie兼容//////////////////////////////////////////////////////////////////////
+var browser=navigator.appName ;
+var b_version=navigator.appVersion ;
+var version=b_version.split(";"); 
+var trim_Version=version[1].replace(/[ ]/g,""); 
+if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0" ||browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0" ||browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0" || browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0") 
+{ 
+	$(document).ready(mouse());
+	function mouse(){//鼠标标志动起来
+	  $(".mouse").animate({bottom:"45px"},500);
+	  $(".mouse").animate({bottom:"30px"},500);
+	  setTimeout(mouse,10);
+	}
+	var positiondivjson={
+		bool:false,
+		init:function(){
+			var _this=this;
+			if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0"){
+				$('.position-div').css({marginRight:"-0px"});
+				$('.head-position-div').click(function(){
+					if(_this.bool==false){
+						$('.position-div').animate({marginRight:"782px"});
+						_this.bool=true;
+					}
+					else{
+						$('.position-div').animate({marginRight:"-0px"});
+						_this.bool=false;
+					}
+				})
+			}
+			else{
+				$('.position-div').css({marginRight:"-693px"});
+				$('.head-position-div').click(function(){
+					if(_this.bool==false){
+						$('.position-div').animate({marginRight:"0px"});
+						_this.bool=true;
+					}
+					else{
+						$('.position-div').animate({marginRight:"-693px"});
+						_this.bool=false;
+					}
+				})
+			}
+			
+		}
+	}
+	positiondivjson.init();
+}

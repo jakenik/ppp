@@ -125,10 +125,11 @@ body {
   height: 25px;
   width: 90px;
   float: right;
-  background: url("../img/tpjl.png") no-repeat 0 0 / auto auto;
+  background: url("../img/tpjl.png") no-repeat 0 0 ;
   cursor: pointer;
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  background-color: #000;
 }
 .head-ul {
   position: relative;
@@ -153,9 +154,9 @@ body {
     bottom: 30px;
     left: 50%;
     margin-left: -27.5px;
-    background-color: rgba(255, 255, 255, 0.3);
+    /*background-color: rgba(255, 255, 255, 0.3);*/
     border-radius: 50%;
-    padding: 12px 0 0 19px;
+    /*padding: 12px 0 0 19px;*/
     z-index: 5;
     animation: divtop 1s infinite alternate;
 }
@@ -412,7 +413,7 @@ body {
   color: #fff;
 }
 .index-middle-div-i {
-  background: url("../img/video.png") no-repeat 0 0 / 100% 100%;
+  /*background: url("../img/video.png") no-repeat 0 0 ;*/
   width: 22.3333%;
   height: 45.3333%;
   display: block;
@@ -499,6 +500,8 @@ body {
 }
 .bussiness-li li img {
   width: auto;
+  position: absolute;
+  left: 50%;
 }
 /*尾部*/
 .tail {
@@ -649,7 +652,8 @@ left: 50%;
 	float: left;
 	width: 27%;
 	margin: 0 1.6%;
-	background: rgba(0,0,0,0.6);
+	/*background: rgba(0,0,0,0.6);*/
+	background: url("../img/aboutbg.png");
 	padding: 14px 12px 18px 12px;
 }
 
@@ -729,7 +733,12 @@ white-space: nowrap;
 	padding-top: 21%;position: absolute;top: 0;width: 100%;height: 100%;z-index: 2;left: 0;
 }
 .about-video-em{
-	height: 22%;
+	width: 26%;
+	height: 24%;
+}
+.about-video-em img{
+	width: 100%;
+	height: 100%;
 }
 
 @media screen and (max-width:1285px ) {
@@ -788,7 +797,7 @@ transition:all 1s;
 -o-transition:all 1s;	/* Opera */
 }
 .about-kong-div-ul li:hover .aboutimg{
-	transform:rotate(180deg);
+	transform:rotateY(180deg);
 -ms-transform:rotateY(180deg); /* Internet Explorer */
 -moz-transform:rotateY(180deg); /* Firefox */
 -webkit-transform:rotateY(180deg); /* Safari 和 Chrome */
@@ -875,6 +884,7 @@ transition:all 1s;
 	top: 50%;
 	margin-top: -13px;
 	z-index: 1;
+	background: #fff;
 	background: rgba(255,255,255,0.6);
 	padding-top: 10px;
 }
@@ -882,7 +892,7 @@ transition:all 1s;
 	width: 8px;
 	height: 15px;
 	margin: 0 auto;
-	background: url("../img/about-left-top.png") no-repeat 0 0 / auto auto;
+	background: url("../img/about-left-top.png") no-repeat 0 0;
 }
 .Details-div1-right{
 	width: 19px;
@@ -892,6 +902,7 @@ transition:all 1s;
 	top: 50%;
 	margin-top: -13px;
 	z-index: 1;
+	background: #fff;
 	background: rgba(255,255,255,0.6);
 	padding-top: 10px;
 }
@@ -899,7 +910,7 @@ transition:all 1s;
 	width: 8px;
 	height: 15px;
 	margin: 0 auto;
-	background: url("../img/about-left-top.png") no-repeat 0 -15px / auto auto;
+	background: url("../img/about-left-top.png") no-repeat 0 -15px;
 }
 .jsDetailsdiv{
 	cursor: pointer;
@@ -1311,7 +1322,11 @@ transition:all 1s;
 /*品牌世界页面*/
 .Brandworld{
 	height: 1000px;
-	background: url("../img/Brandworld.jpg")no-repeat;
+	background: url("../img/Brandworld.jpg") no-repeat;
+	background-size: auto 100%;
+}
+.windosjs{
+	height: 1000px;
 }
 .Brandworld-body{
 	width: 1222px;
@@ -1409,6 +1424,7 @@ transition:all 1s;
 	left: 0;
 	width: 100%;
 	height: 1000px;
+	background:url("../img/aboutbg.png");
 	background: rgba(0,0,0,0.8);
 	z-index: 10;
 	overflow: hidden;
@@ -1643,6 +1659,7 @@ transition:all 1s;
 	overflow: hidden;
 }
 .Productcenter-Box-left,.Productcenter-Box-right{
+	background: url("../img/aboutbg.png");
 	background: rgba(0,0,0,0.6);
 	width: 49.9%;
 	height: 100%;

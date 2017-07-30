@@ -330,13 +330,18 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript" src="js/jquery-1.7.1.min.js">
-	</script>
-	<!-- 排序插件 置于jquery后-->
-	<script src="js/jquery.isotope.min.js"></script>
-	<script type="text/javascript" src="js/app.js">
-	</script>
-	<script type="text/javascript">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js">
+</script>
+<!-- 排序插件 置于jquery后-->
+<script src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/app.js">
+</script>
+<script type="text/javascript">
+////////////////////////////////////////////////////////////////////ie兼容//////////////////////////////////////////////////////////////////////
+var browser=navigator.appName ;
+var b_version=navigator.appVersion ;
+var version=b_version.split(";"); 
+var trim_Version=version[1].replace(/[ ]/g,"");
 	$('.js-b-ul').isotope({
     itemSelector: '.js-b-ul li'
 	});
@@ -371,11 +376,41 @@ $('body').on('click','.js-brandLink  li',function(){
             alert("请求繁忙，请稍后重试！");
         }
     });
-    $('.Brandworld-Box').css({display:'block'})
+    if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0" ||browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0" ||browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0" ) 
+{
+   $('.Brandworld-Box').css({display:'block'});
+   $('.Brandworld-Box-div').css({bottom:"-100%"});
+   $('.Brandworld-Box-div').animate({bottom:"0%"});
+}
+if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0"){
+	$('.Brandworld-Box').css({display:'block'});
+	$('.Brandworld-Box-div').css({bottom:"0%"});
+   	$('.Brandworld-Box-div').animate({bottom:"70%"});
+}
+else{
+	$('.Brandworld-Box').css({display:'block'})
     $('.Brandworld-Box-div').removeClass('translateYOut');
     $('.Brandworld-Box-div').addClass("translateYIn");
+}
 });
-$('.Brandworld-Box-bottom').click(function(){
+
+if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0" ||browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0" ||browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0" ) 
+{
+	$('.Brandworld-Box-bottom').click(function(){
+	$('.Brandworld-Box-div').animate({bottom:"-100%"},function(){
+			$('.Brandworld-Box').css({display:'none'})
+		});	
+	})
+}
+if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0"){
+	$('.Brandworld-Box-bottom').click(function(){
+		$('.Brandworld-Box-div').animate({bottom:"0%"},function(){
+			$('.Brandworld-Box').css({display:'none'})
+		});
+	})
+}
+else{
+	$('.Brandworld-Box-bottom').click(function(){
 	$('.Brandworld-Box-div').removeClass('translateYIn');
 	$('.Brandworld-Box-div').addClass("translateYOut");
 	setTimeout(
@@ -384,7 +419,7 @@ $('.Brandworld-Box-bottom').click(function(){
 		}
 	,500)
 	
-})
-	</script>
-
+	})
+}
+</script>
 </html>
